@@ -1,0 +1,5 @@
+{
+    "require": {
+        "wangsucs/wcs-sdk-php": "^2.0"
+    }
+}
