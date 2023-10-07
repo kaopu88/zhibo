@@ -1,0 +1,347 @@
+.layui-nav .layui-nav-more {
+  border-color: #000 transparent transparent;
+}
+
+.layui-nav .layui-nav-mored,
+.layui-nav-itemed>a .layui-nav-more {
+  border-color: transparent transparent #000;
+}
+
+@font-face {
+  font-family: PingFangSC-Semibold;
+  src        : url("/bx_static/admin/style/PingFang/PingFang-SC-Semibold-2.ttf");
+}
+
+@font-face {
+  font-family: PingFangSC-Regular;
+  src        : url("/bx_static/admin/style/PingFang/PingFang-Jian-ChangGuiTi-2.ttf");
+}
+
+body {
+  width     : 100vw;
+  height    : 100vh;
+  overflow-x: hidden;
+}
+
+.home_bg,
+.contact_bg {
+  width          : 100%;
+  height         : 100%;
+  background-size: cover;
+}
+
+.layui-carousel {
+  position: absolute;
+  z-index : -1;
+}
+
+.img1 {
+  background: url("../../admin/assets/man-wearing3.jpg") no-repeat center top fixed;
+}
+
+.img2 {
+  background: url("../../admin/assets/man-wearing4.jpg") no-repeat center top fixed;
+}
+
+.img3 {
+  background: url("../../admin/assets/man-wearing5.jpg") no-repeat center top fixed;
+}
+
+.img_1 {
+  background: url("../../admin/assets/man-wearing.jpg") no-repeat center top fixed;
+}
+
+.img_2 {
+  background: url("../../admin/assets/man-wearing6.jpg") no-repeat center top fixed;
+}
+
+.img_3 {
+  background: url("../../admin/assets/man-wearing7.jpg") no-repeat center top fixed;
+}
+
+.contact_bg {
+  height: 937px;
+}
+
+.m-r-26 {
+  margin-right: 26px;
+}
+
+.container {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  width          : 90%;
+  height         : 100%;
+  margin         : auto;
+}
+
+.container nav {
+  padding-top: 30px;
+}
+
+.container nav ul {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.container nav ul li {
+  height: 54px;
+}
+
+.container nav ul li img {
+  width: 100%;
+}
+
+.container nav ul .title {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.container nav ul .title a {
+  font-family   : PingFangSC-Semibold;
+  font-size     : 14px;
+  color         : #FFFFFF;
+  letter-spacing: 0;
+  text-shadow   : 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height   : 54px;
+}
+
+.container nav ul .title a:hover {
+  border-bottom: 2px solid #FF2D52;
+  border-radius: 1.5px;
+}
+
+.container .main {
+  height         : 400px;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  position       : relative;
+}
+
+.container .main .top {
+  width   : 322px;
+  position: absolute;
+  bottom  : 120px;
+}
+
+.container .main .top .title h3 {
+  font-family   : PingFangSC-Semibold;
+  font-size     : 45px;
+  color         : #FFFFFF;
+  letter-spacing: 0;
+  text-shadow   : 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container .main .top .center {
+  display        : flex;
+  justify-content: space-between;
+  margin-top     : 20px;
+}
+
+.container .main .top .center .download {
+  width            : 126px;
+  height           : 126px;
+  background-image : url(../../admin/assets/scan_code_to_download@3x.png);
+  background-repeat: no-repeat;
+  background-size  : contain;
+}
+
+.container .main .top .center .btn {
+  width          : 171px;
+  height         : 126px;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+}
+
+.container .main .top .center .btn div {
+  width        : 100%;
+  height       : 52px;
+  display      : flex;
+  background   : rgba(255, 255, 255, 0.3);
+  border       : 2px solid #FFFFFF;
+  border-radius: 26px;
+  border-radius: 26px;
+  cursor       : pointer;
+}
+
+.container .main .top .center .btn div:hover {
+  background: rgba(255, 45, 82, 0.3);
+  border    : 2px solid #ff2d52;
+}
+
+.container .main .top .center .btn div .appstore {
+  width           : 22px;
+  height          : 25px;
+  background-image: url("../../admin/assets/icon-store@3x.png");
+  background-size : contain;
+  margin          : 15px 12px 0 26px;
+}
+
+.container .main .top .center .btn div .app_font {
+  font-family   : PingFangSC-Semibold;
+  font-size     : 20px;
+  color         : #FFFFFF;
+  letter-spacing: 0;
+  text-shadow   : 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height   : 56px;
+}
+
+.container .main .top .center .btn div .android {
+  width           : 22px;
+  height          : 25px;
+  background-image: url("../../admin/assets/icon-android@3x.png");
+  background-size : contain;
+  margin          : 15px 12px 0 26px;
+}
+
+.container .main .top .footer {
+  width     : 126px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container .main .top .footer .scan {
+  font-family   : PingFangSC-Semibold;
+  font-size     : 12px;
+  color         : #FFFFFF;
+  letter-spacing: 0;
+  text-shadow   : 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 767px) {
+  .container nav ul li {
+    width: 120px;
+  }
+
+  .container nav ul li img {
+    margin-top: 10px;
+  }
+
+  .container nav ul .title {
+    width: 160px;
+  }
+
+  .container .contact_main .content {
+    width: 90%;
+  }
+
+  .container .contact_main .content .content_text {
+    width: 100%;
+  }
+
+  .container .contact_main .content .content_text div {
+    font-family   : PingFangSC-Semibold;
+    font-size     : 14px;
+    color         : #FFFFFF;
+    letter-spacing: 0;
+    text-shadow   : 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .container .contact_main .content .content_text div .font_us {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container nav ul li {
+    width: 187px;
+  }
+
+  .container nav ul li img {
+    margin-top: 0;
+  }
+
+  .container nav ul .title {
+    width: 320px;
+  }
+
+  .container .contact_main .content {
+    width: 80%;
+  }
+
+  .container .contact_main .content .content_text {
+    width: calc(100% + 20px);
+  }
+
+  .container .contact_main .content .content_text div {
+    font-family   : PingFangSC-Semibold;
+    font-size     : 18px;
+    color         : #FFFFFF;
+    letter-spacing: 0;
+    text-shadow   : 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .container .contact_main .content .content_text div .font_us {
+    font-size: 24px;
+  }
+}
+
+.container .contact_main {
+  width        : 82%;
+  height       : 617px;
+  margin       : auto;
+  background   : rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  border-radius: 12px;
+}
+
+.container .contact_main .content {
+  height    : 401px;
+  text-align: center;
+  margin    : 108px auto;
+  overflow  : hidden;
+}
+
+.container .contact_main .content .content_text {
+  height  : 100%;
+  overflow: auto;
+}
+
+.container .contact_main .content .content_text div .code_login_img img {
+  width : 156px;
+  height: 156px;
+}
+
+.container .contact_main .content .content_text div p {
+  text-align   : left;
+  margin-bottom: 15px;
+  word-wrap    : break-word;
+  word-break   : break-all;
+}
+
+.container .contact_main .content .content_text div .center {
+  text-align: center;
+}
+
+.container .contact_main .content .content_text .contact_way {
+  margin-top: 60px;
+}
+
+.container .contact_main .content .content_text .QQ {
+  margin-top: 40px;
+}
+
+.container footer {
+  width        : 100%;
+  margin-bottom: 20px;
+  position     : absolute;
+  bottom       : 0;
+  left         : 50%;
+  transform    : translateX(-50%);
+}
+
+.container footer div {
+  text-align   : center;
+  margin-bottom: 10px;
+}
+
+.container footer div span {
+  font-family   : PingFangSC-Semibold;
+  font-size     : 12px;
+  color         : #FFFFFF;
+  letter-spacing: 0;
+  text-shadow   : 0 2px 4px rgba(0, 0, 0, 0.4);
+}

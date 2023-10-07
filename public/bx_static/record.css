@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src        : url('./admin/style/PingFang/PingFangSC-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'PingFangSC-Semibold';
+  src        : url('./admin/style/PingFang/PingFangSC-Semibold.ttf');
+}
+
+body {
+  margin : 0;
+  padding: 0;
+}
+
+body .container.exchange_list {
+  position: relative;
+}
+
+@supports ((height: constant(safe-area-inset-top)) or (height: env(safe-area-inset-top))) and (-webkit-overflow-scrolling: touch) {
+  body .container.exchange_list {
+    /* 适配齐刘海 */
+    padding-top: 20px;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+
+    /* 适配底部小黑条 */
+    padding-bottom: 0;
+    padding-bottom: costant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+body .container header {
+  display : flex;
+  width   : 100%;
+  height  : 1.173rem;
+  position: relative;
+}
+
+body .container header a {
+  width    : 0.453rem;
+  height   : 0.453rem;
+  position : absolute;
+  left     : 0.32rem;
+  top      : 50%;
+  transform: translateY(-50%);
+}
+
+body .container header a img {
+  width : 100%;
+  height: 100%;
+}
+
+body .container header .mui-title {
+  font-size     : 0.48rem;
+  font-family   : 'PingFangSC-Semibold';
+  color         : #282828;
+  letter-spacing: 0;
+  display       : block;
+  margin        : auto;
+}
+
+body .container .taskHD {
+  width           : 100%;
+  height          : 3.946rem;
+  background-image: linear-gradient(270deg, #ffd576 0%, #ff2d52 100%);
+}
+
+body .container .taskHD .integral {
+  display    : flex;
+  padding-top: 0.8rem;
+}
+
+body .container .taskHD .integral .today,
+body .container .taskHD .integral .my {
+  width      : 50%;
+  font-size  : 0.373rem;
+  color      : #f8f8f8;
+  font-family: 'PingFangSC-Regular';
+  height     : 1.546rem;
+  text-align : center;
+}
+
+body .container .taskHD .detail {
+  font-family   : 'PingFangSC-Regular';
+  font-size     : 0.373rem;
+  color         : #f8f8f8;
+  letter-spacing: 0;
+  text-align    : center;
+  margin-top    : 0.8rem;
+}
+
+body .container .taskHD .point {
+  font-size: 0.64rem;
+}
+
+body .container .layui-tab-title {
+  display        : flex;
+  justify-content: space-around;
+}
+
+body .container .layui-tab-title li {
+  font-family   : 'PingFangSC-Regular';
+  font-size     : 0.426rem;
+  letter-spacing: 0;
+  color         : #8c8c8c;
+}
+
+body .container .layui-tab-title .layui-this {
+  position   : relative;
+  color      : #ff2d52;
+  font-family: 'PingFangSC-Semibold';
+}
+
+body .container .layui-tab-title .layui-this:after {
+  border-bottom: 3px solid #ff2d52;
+  width        : 20px;
+  position     : absolute;
+  left         : 50%;
+  transform    : translateX(-50%);
+  border-radius: 0.04rem;
+}
+
+body .container .layui-tab-content {
+  padding: 0.533rem 0.32rem 0;
+}
+
+body .container .layui-tab-content ul li {
+  display        : flex;
+  justify-content: space-between;
+  height         : 0.986rem;
+  align-items    : center;
+  margin-bottom  : 0.8rem;
+}
+
+body .container .layui-tab-content ul li .title {
+  font-size     : 0.373rem;
+  font-family   : 'PingFangSC-Regular';
+  color         : #282828;
+  letter-spacing: 0;
+}
+
+body .container .layui-tab-content ul li .time {
+  font-size     : 0.32rem;
+  font-family   : 'PingFangSC-Regular';
+  color         : #b2b2b2;
+  letter-spacing: 0;
+}
+
+body .container .layui-tab-content ul li .consume {
+  font-size     : 0.426rem;
+  font-family   : 'PingFangSC-Semibold';
+  color         : #ffb46f;
+  letter-spacing: 0;
+  font-weight   : 600;
+}
+
+body .container .layui-tab-content .hint {
+  font-family   : 'PingFangSC-Regular';
+  font-size     : 0.373rem;
+  color         : #8c8c8c;
+  letter-spacing: 0;
+  text-align    : center;
+}

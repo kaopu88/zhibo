@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'PingFangSC-Regular';
+    src        : url('./admin/style/PingFang/PingFangSC-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PingFangSC-Semibold';
+    src        : url('./admin/style/PingFang/PingFangSC-Semibold.ttf');
+}
+
+body {
+    padding: 0;
+    margin : 0 auto;
+    width  : 10rem;
+}
+
+body header {
+    display   : flex;
+    width     : 100%;
+    height    : 1.173rem;
+    position  : relative;
+    background: #EDEDED;
+}
+
+@supports ((height: constant(safe-area-inset-top)) or (height: env(safe-area-inset-top))) and (-webkit-overflow-scrolling: touch) {
+    body header {
+        /* 适配齐刘海 */
+        padding-top: 20px;
+        padding-top: constant(safe-area-inset-top);
+        padding-top: env(safe-area-inset-top);
+
+        /* 适配底部小黑条 */
+        padding-bottom: 0;
+        padding-bottom: costant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+body header a {
+    width    : 0.453rem;
+    height   : 0.453rem;
+    position : relative;
+    left     : 0.32rem;
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+body header a img {
+    width : 100%;
+    height: 100%;
+}
+
+body header .mui-title {
+    font-family   : 'PingFangSC-Regular';
+    font-size     : 0.48rem;
+    color         : #282828;
+    letter-spacing: 0;
+    display       : block;
+    margin        : auto 0.853rem;
+    margin-right  : 0;
+}
+
+.more_icon {
+    width          : 0.586rem;
+    height         : 0.106rem;
+    background     : url('../bx_static/admin/assets/nav_icon_share_h5@3x.png') no-repeat center;
+    background-size: contain;
+    position       : relative;
+    left           : 5.04rem;
+    top            : 50%;
+    transform      : translateY(-50%);
+}
+
+/* 授权失败 */
+.container.fail {
+    display: none;
+}
+
+.container {
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
+    width         : 6.346rem;
+    margin        : 3.733rem auto;
+}
+
+.container.fail .authorzation_icon,
+.container.success .authorzation_icon {
+    width          : 2.746rem;
+    height         : 2.746rem;
+    background     : url('../bx_static/admin/assets/icon_share_h5_failure@3x.png') no-repeat center;
+    background-size: contain;
+    margin         : auto;
+    margin-bottom  : 0.986rem;
+}
+
+.container .content {
+    margin-bottom: 3.2rem;
+    text-align   : center;
+}
+
+.container.fail .content p {
+    font-family   : 'PingFangSC-Regular';
+    letter-spacing: 0;
+    font-size     : 0.373rem;
+    color         : #8C8C8C;
+}
+
+.container .content p:first-child {
+    font-size: 0.426rem;
+    color    : #282828;
+}
+
+.container.fail .btn,
+.container.success .btn {
+    width           : 4.986rem;
+    height          : 1.066rem;
+    line-height     : 1.066rem;
+    background-image: linear-gradient(90deg, #FF8559 0%, #FF373A 100%);
+    border-radius   : 0.533rem;
+    margin          : auto;
+    text-align      : center;
+    font-family     : 'PingFangSC-Regular';
+    font-size       : 0.373rem;
+    color           : #F8F8F8;
+    letter-spacing  : 0;
+}
+
+/* 授权成功 */
+.container.success .authorzation_icon {
+    background     : url('../bx_static/admin/assets/icon_share_h5_success@3x.png') no-repeat center;
+    background-size: contain;
+}
+
+.container.success .btn {
+    background-image: linear-gradient(90deg, #A5E572 0%, #5BB048 100%);
+    border-radius   : 0.533rem;
+}
+
+/* 商品详情 */
+.top {
+    height    : 1.066rem;
+    background: #F6F6F6;
+    display   : flex;
+    padding   : 0.186rem 0.213rem 0;
+}
+
+.top .logo {
+    width          : 0.853rem;
+    height         : 0.853rem;
+    background     : url('../bx_static/admin/assets/ic_launcher_logo@3x.png') no-repeat center;
+    background-size: contain;
+    position       : relative;
+    margin-right   : 0.213rem;
+}
+
+.top .logo::before {
+    content      : '';
+    display      : block;
+    width        : 8.613rem;
+    height       : 8.613rem;
+    position     : absolute;
+    background   : #FFFFFF;
+    border-radius: 100%;
+    z-index      : -1;
+}
+
+.top .text {
+    height        : 8.613rem;
+    font-family   : 'PingFangSC-Regular';
+    font-size     : 0.293rem;
+    color         : #282828;
+    letter-spacing: 0;
+}
+
+.top .text p:first-child {
+    font-family   : 'PingFangSC-Semibold';
+    font-size     : 0.346rem;
+    letter-spacing: 0;
+}
+
+.top .app_download {
+    width          : 2rem;
+    height         : 0.96rem;
+    background     : url('../bx_static/admin/assets/icon_share_h5_download@3x.png') no-repeat center;
+    background-size: contain;
+    position       : relative;
+    margin-left    : 2.666rem;
+}
+
+.shop_detail {
+    width         : 8.586rem;
+    display       : flex;
+    flex-direction: column;
+    margin        : 0.213rem auto 2.96rem;
+}
+
+.shop_detail .title {
+    font-family   : 'PingFangSC-Semibold';
+    font-size     : 0.4rem;
+    color         : #282828;
+    letter-spacing: 0;
+    position      : relative;
+    text-indent   : 0.58rem;
+    margin-bottom : 0.56rem;
+}
+
+.shop_detail .title::before {
+    content        : '';
+    display        : block;
+    width          : 0.4rem;
+    height         : 0.4rem;
+    background     : url('../bx_static/admin/assets/icon_tk_taobao_big@3x.png') no-repeat center;
+    background-size: contain;
+    position       : absolute;
+}
+
+.shop_detail img {
+    width : 100%;
+    height: 8.586rem;
+}
+
+.shop_detail .info_detail {
+    display        : flex;
+    justify-content: space-between;
+    margin-top     : 0.56rem;
+}
+
+.shop_detail .info_detail .discounts {
+    font-family   : 'PingFangSC-Regular';
+    font-size     : 0.373rem;
+    color         : #8C8C8C;
+    letter-spacing: 0;
+}
+
+.shop_detail .info_detail .discounts .line_through {
+    text-decoration: line-through;
+}
+
+.shop_detail .info_detail .discounts .price {
+    font-family   : 'PingFangSC-Semibold';
+    font-size     : 0.56rem;
+    color         : #E82935;
+    letter-spacing: 0;
+    line-height   : 0.533rem;
+}
+
+.shop_detail .info_detail .discounts .price_icon {
+    font-size     : 0.373rem;
+    color         : #E82935;
+    letter-spacing: 0;
+    padding-left  : 0.213rem;
+    padding-right : 0.133rem;
+}
+
+.shop_detail .info_detail .coupon {
+    width          : 2.373rem;
+    height         : 0.96rem;
+    background     : url('../bx_static/admin/assets/icon_tk_share_coupon@3x.png') no-repeat center;
+    background-size: contain;
+}
+
+.shop_detail .info_detail .coupon p {
+    font-family   : 'PingFangSC-Regular';
+    font-size     : 0.64rem;
+    color         : #F8F8F8;
+    letter-spacing: 0;
+    line-height   : 0.96rem;
+    padding-left  : 0.293rem;
+}
+
+.bug_btn {
+    width         : 8.613rem;
+    height        : 1.066rem;
+    line-height   : 1.066rem;
+    background    : #E82935;
+    border-radius : 0.533rem;
+    font-family   : 'PingFangSC-Semibold';
+    font-size     : 0.426rem;
+    color         : #F8F8F8;
+    letter-spacing: 0;
+    text-align    : center;
+    margin        : auto;
+    margin-bottom : 0.8rem;
+}
+
+#copy_bug .copy_font {
+    width                  : 180px;
+    height                 : 110px;
+    background             : url('../bx_static/admin/assets/taokoulin.be1b3f1.png') no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size        : 100%;
+    margin                 : 0 auto;
+    padding-top            : 40px;
+    text-align             : center;
+    line-height            : 40px;
+    font-size              : 20px;
+}
+
+#copy_bug #input {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    opacity : 0;
+    z-index : -10;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    width           : 200px;
+    height          : 45px;
+    line-height     : 45px;
+    background-color: #E82935 !important;
+    border-radius   : 22px;
+    border          : 1px solid #E82935 !important;
+    font-size       : 16px;
+    text-align      : center;
+}
+
+.layui-layer {
+    border-radius: 12px !important;
+}

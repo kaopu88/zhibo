@@ -1,0 +1,24 @@
+[2023-09-06T13:42:44+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:42:44+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:44:21+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:44:21+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:46:47+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:46:47+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:49:48+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:49:48+08:00][ error ] [2]Use of undefined constant DATA_AUTH - assumed 'DATA_AUTH' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:168]
+error
+[2023-09-06T13:50:39+08:00][ error ] [2]Use of undefined constant DATA_TOKEN - assumed 'DATA_TOKEN' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:170]
+error
+[2023-09-06T13:50:39+08:00][ error ] [2]Use of undefined constant DATA_TOKEN - assumed 'DATA_TOKEN' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:170]
+error
+[2023-09-06T13:51:34+08:00][ error ] [2]Use of undefined constant LOOP_BACK_URL - assumed 'LOOP_BACK_URL' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:199]
+error
+[2023-09-06T13:51:34+08:00][ error ] [2]Use of undefined constant LOOP_BACK_URL - assumed 'LOOP_BACK_URL' (this will throw an Error in a future version of PHP)[/www/wwwroot/zhibb/config/app.php:199]
+error

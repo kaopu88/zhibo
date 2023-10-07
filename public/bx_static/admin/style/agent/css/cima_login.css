@@ -1,0 +1,109 @@
+.t-118 {
+  top: 118px;
+}
+
+.t-192 {
+  top: 192px;
+}
+
+.t-125 {
+  top: 125px !important;
+}
+
+.t-199 {
+  top: 199px !important;
+}
+
+.gray {
+  color: #C8C8C8 !important;
+}
+
+.cima_login_top {
+  width: 375px;
+  height: 44px;
+  line-height: 44px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+}
+
+.cima_login_main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .cima_login_main {
+    height: 554px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cima_login_main {
+    height: 500px;
+  }
+}
+
+.cima_form_style {
+  width: 449px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+.cima_form_center {
+  position: relative;
+  width: 268px;
+  height: 325px;
+  margin: auto;
+}
+
+.cima_title {
+  height: 44px;
+  line-height: 44px;
+  position: relative;
+  text-align: center;
+}
+
+.cima_icon_left {
+  color: #F8F8F8;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .cima_form_style {
+    width: 337px;
+    height: 436px;
+  }
+  .cima_login_top {
+    display: block;
+  }
+  .cima_login_main {
+    top: 44px;
+  }
+  .cima_form_center {
+    margin-top: 55.5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cima_form_style {
+    width: 449px;
+    height: 470px;
+  }
+  .cima_login_top {
+    display: none;
+  }
+  .cima_login_main {
+    top: 0;
+  }
+  .cima_form_center {
+    margin-top: 72.5px;
+  }
+}

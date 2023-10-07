@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="renderer" content="webkit" />
+    <meta name="applicable-device" content="pc" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="application-name" content="" />
+    <meta name="renderer" content="webkit" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./layui.css" />
+    <link rel="stylesheet" href="./authorization.css" />
+    <script src="./layui.js"></script>
+    <script src="./media_auto.js"></script>
+    <title>秉信直播系统</title>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon">
+            <img src="./admin/assets/icon_befault_gb@3x.png" />
+        </a>
+        <h1 class="mui-title">秉信直播系统</h1>
+        <div class="more_icon"></div>
+    </header>
+    <div class="top">
+        <div class="logo"></div>
+        <div class="text">
+            <p>秉信直播系统</p>
+            <p>我们致力直播生态系统研发</p>
+        </div>
+        <a href="#" class="app_download"></a>
+    </div>
+    <div class="shop_detail">
+        <div class="title">
+            大树将军啥都卡驾驶的健康但大声道打大声道嗷嗷的实打实
+        </div>
+        <img src="../bx_static/admin/assets/df83f6ae-2e40-4035-9cdc-fd6b6bef39d6@3x.png" alt="shop_img">
+        <div class="info_detail">
+            <div class="discounts">
+                <div class="line_through">¥ 399</div>
+                <div>券后价<span class="price_icon">¥</span><span class="price">299.90</span></div>
+            </div>
+            <div class="coupon">
+                <p>¥ 10</p>
+            </div>
+        </div>
+    </div>
+    <div class="bug_btn">去购买</div>
+    <div id="copy_bug" style="display: none;">
+        <div class="copy_font">
+            ￥8D5p1z9EHM9￥
+        </div>
+        <textarea id="input"></textarea>
+    </div>
+</body>
+<script>
+    layui.use('layer', function () {
+        var layer = layui.layer;
+        var $ = layui.jquery;
+        var title = getQueryVariable("title");
+        var shop_type = getQueryVariable("shop_type");
+        var img = getQueryVariable("img");
+        var price = getQueryVariable("price");
+        var discount_price = getQueryVariable("discount_price");
+        var coupon_price = getQueryVariable("coupon_price");
+        var key = getQueryVariable("key");
+        $(".title").text(decodeURI(title));
+        if(shop_type == "B"){
+
+        }else if(shop_type == "P"){
+
+        }else if(shop_type == "J"){
+
+        }
+
+        $(".shop_detail > img").attr("src", img);
+        $(".line_through").text("¥ "+price);
+        $(".price").text(discount_price);
+        $(".coupon > p").text("¥ "+coupon_price);
+        $(".copy_font").text(decodeURI(key));
+        $('.bug_btn').click(function () {
+            layer.open({
+                id: 'bug',
+                title: false,
+                offset: '100px',
+                type: 1,
+                skin: 'rules-class',
+                area: ['310px', '225px'],
+                content: $('#copy_bug'),
+                closeBtn: 2,
+                btn: ['复制'],
+                btnAlign: 'c',
+                shade: [0.8, '#000'],
+                shadeClose: true,
+                yes: function (index, layero) {
+                    var txt = $('.copy_font').text();
+                    $('#input').val(txt);
+                    $('#input').select();
+                    document.execCommand("copy");
+                    layer.msg('复制成功');
+                },
+            })
+        })
+    });
+
+
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+</script>
+
+</html>

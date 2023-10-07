@@ -1,0 +1,580 @@
+body, p {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 10rem;
+    height: 100vh
+}
+
+.container .bgGray {
+    background-color: #F5F9FC;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -2;
+    width: 10rem
+}
+
+.container .setting_wall {
+    width: 10rem;
+    height: 5.7333rem;
+    background-image: url("./../assets/image_profit_report_taoke@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+.container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 9.36rem;
+    height: 1.17333rem;
+    padding: 0 .32rem;
+    margin-top: 0.32333rem
+}
+
+.container nav .back {
+    width: .4rem;
+    height: .66667rem;
+    background: url("./../assets/back.png") no-repeat center;
+    background-size: cover
+}
+
+.container nav .title {
+    font-size: .48rem;
+    color: #F8F8F8;
+    font-weight: bold
+}
+
+.container nav .search_input {
+    position: relative;
+    display: none
+}
+
+.container nav .search_input .icon {
+    position: absolute;
+    display: block;
+    width: .37333rem;
+    height: .37333rem;
+    background-image: url("./../assets/nav_icon_ssbd@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: .4rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.container nav .search_input input {
+    font-size: .37333rem;
+    width: 7.08rem;
+    height: .90667rem;
+    /*line-height: .90667rem;*/
+    outline: none;
+    border: none;
+    background: #F5F9FC;
+    border-radius: .45333rem;
+    padding-left: 1.04rem
+}
+
+.container nav .search {
+    width: .50667rem;
+    height: .50667rem;
+    background-image: url("./../assets/icon_mine_team_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container nav #isSearch {
+    font-size: .42667rem;
+    color: #F8F8F8
+}
+
+.container .content {
+    margin-top: 0.63333rem
+}
+
+.container .content.fans {
+    margin-top: .53333rem
+}
+
+.container .content header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 .32rem
+}
+
+.container .content header .icon {
+    width: .42667rem;
+    height: .50667rem;
+    background-image: url("./../assets/icon_mine_recommend_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .42667rem
+}
+
+.container .content header .user_name_img {
+    width: 1.28rem;
+    height: 1.28rem;
+    border-radius: 100%;
+    background-color: lemonchiffon;
+    margin-right: .26667rem
+}
+
+.container .content header .info p {
+    font-weight: bold;
+    font-size: .42667rem;
+    color: #F8F8F8;
+    line-height: .58667rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.container .content header .info > p:last-child {
+    opacity: 0.6;
+    font-weight: normal;
+    font-size: .32rem;
+    color: #F8F8F8
+}
+
+.container .content header > .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.container .content header > .item .user_img {
+    width: 1.17333rem;
+    height: 1.17333rem;
+    background-color: blanchedalmond;
+    border-radius: 100%;
+    margin-right: .26667rem
+}
+
+.container .content header > .item .user_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 1.17333rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.container .content header > .item .user_info > .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.container .content header > .item .user_info > .title .name {
+    font-size: .37333rem;
+    color: #f8f8f8;
+    margin-right: .26667rem
+}
+
+.container .content header > .item .user_info > .title .member {
+    min-width: 1.89333rem;
+    padding: .05333rem .13333rem;
+    font-weight: bold;
+    font-size: .29333rem;
+    color: #FAEDC5;
+    height: .42667rem
+}
+
+.container .content header > .item .user_info > .title .member::before {
+    content: '';
+    display: inline-block;
+    width: .32rem;
+    height: .26667rem;
+    margin-right: .13333rem;
+    background-image: url("./../assets/icon_crown_vip_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .content header > .item .user_info .join_tiem {
+    font-size: .32rem;
+    opacity: 0.3;
+    color: #FFFFFF
+}
+
+.container .content header > .item .user_count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 1.17333rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.container .content header > .item .user_count span {
+    opacity: 0.8;
+    font-size: .32rem;
+    color: #FFFFFF;
+    margin-left: .26667rem
+}
+
+.container .content .main {
+    margin-top: .66667rem
+}
+
+.container .content .main .tabs {
+    width: 10rem;
+    height: 1.53667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("./../assets/icon_mine_switch_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .content .main .tabs1 {
+    width: 10rem;
+    height: 1.53667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container .content .main .tabs.active {
+    background-image: url("./../assets/icon_mine_switch_taoke2@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .content .main .tabs .item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.container .content .main .tabs .item p {
+    font-weight: bold;
+    font-size: .48rem;
+    color: #f8f8f8;
+    line-height: .66667rem
+}
+
+.container .content .main .tabs .item p.footer_text {
+    font-size: .32rem;
+    opacity: 0.6;
+    line-height: .45333rem
+}
+
+.container .content .main .tabs .item.active p {
+    font-weight: bold;
+    font-size: .48rem;
+    color: #282828;
+    line-height: .66667rem
+}
+
+.container .content .main .tabs .item.active p.footer_text {
+    font-size: .32rem;
+    color: #8C8C8C;
+    line-height: .45333rem
+}
+
+.container .content .main .tabs_content_item {
+    margin-top: -.02667rem;
+    display: none
+}
+
+.container .content .main .tabs_content_item.active {
+    display: block
+}
+
+.container .content .main .tabs_content_item > .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 1.89333rem;
+    background-color: #ffffff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.container .content .main .tabs_content_item > .info div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center
+}
+
+.container .content .main .tabs_content_item > .info div p {
+    font-size: .48rem;
+    color: #282828
+}
+
+.container .content .main .tabs_content_item > .info div p:last-child {
+    font-size: .32rem
+}
+
+.container .content .main .tabs_content_item > .list {
+    width: 9.36rem;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: calc(100vh - 6.7rem);
+    overflow: hidden;
+    overflow-y: auto
+}
+
+.container .content .main .tabs_content_item > .list.fans {
+    max-height: calc(100vh - 12.006rem)
+}
+
+.container .content .main .tabs_content_item > .list .list_item {
+    margin-top: .26667rem;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    padding: .29333rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: .13333rem;
+    -webkit-box-shadow: 0 .05333rem .10667rem 0 #E8F5FF;
+    box-shadow: 0 .05333rem .10667rem 0 #E8F5FF
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_img {
+    background-color: bisque;
+    width: 1.17333rem;
+    height: 1.17333rem;
+    margin-right: .29333rem;
+    border-radius: 100%
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 1.17333rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_info > .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_info > .title .name {
+    font-size: .37333rem;
+    color: #282828;
+    margin-right: .26667rem
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_info > .title .member {
+    min-width: 1.89333rem;
+    padding: .05333rem .13333rem;
+    font-weight: bold;
+    background-color: black;
+    font-size: .29333rem;
+    color: #FAEDC5;
+    height: .42667rem;
+    border-radius: .13333rem
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_info > .title .member::before {
+    content: '';
+    display: inline-block;
+    width: .32rem;
+    height: .26667rem;
+    margin-right: .13333rem;
+    background-image: url("./../assets/icon_crown_vip_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_info .join_tiem {
+    font-size: .32rem;
+    color: #B2B2B2
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 1.17333rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.container .content .main .tabs_content_item > .list .list_item .user_count span {
+    opacity: 0.8;
+    font-size: .32rem;
+    color: #8C8C8C;
+    margin-left: .26667rem
+}
+
+.container .content .main .user_profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: .56rem
+}
+
+.container .content .main .user_profile > div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.container .content .main .user_profile > div p {
+    font-size: .34667rem;
+    color: #F8F8F8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 1.49333rem
+}
+
+.container .content .main .user_profile > div p:last-child {
+    font-size: .37333rem;
+    margin-top: .13333rem
+}
+
+.container .content .main .user_profile > div p.phone::before {
+    content: '';
+    display: inline-block;
+    width: .48rem;
+    height: .48rem;
+    background-image: url("./../assets/icon_phone_wx_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .08rem
+}
+
+.container .content .main .user_profile > div p.phone_num::after {
+    content: '';
+    display: inline-block;
+    width: .21333rem;
+    height: .21333rem;
+    background-image: url("./../assets/icon_phone_copy_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: .13333rem
+}
+
+.container .content .main .user_profile > div p.wechat::before {
+    content: '';
+    display: inline-block;
+    width: .48rem;
+    height: .48rem;
+    background-image: url("./../assets/icon_team_wx_taoke@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .08rem
+}
+
+.container .content .main .estimate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -.02667rem;
+    padding: .4rem 0;
+    background: #FFFFFF
+}
+
+.container .content .main .estimate > div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.container .content .main .estimate > div p {
+    font-weight: bold;
+    font-size: .42667rem;
+    color: #282828;
+    text-align: center
+}
+
+.container .content .main .estimate > div p:first-child {
+    opacity: 0.6;
+    font-size: .32rem
+}
+
+/*# sourceMappingURL=index.min.css.map */

@@ -1,0 +1,637 @@
+
+
+body, p {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: "Regular"
+}
+
+.container {
+    background-image: linear-gradient(-89deg, #691FAA 0%, #7B25B7 49%, #6A1FAD 100%)
+}
+
+.container .bg_wall {
+    width: 10rem;
+    height: 11.86667rem;
+    margin: auto;
+    background-image: url("../image/image_act_stars_back@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .bg_wall .weekStar {
+    width: 10rem;
+    height: 11.86667rem;
+    background-image: url("../image/image_act_stars_weekly@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .last_week {
+    width: 9.30667rem;
+    height: 14.48rem;
+    margin: -1.6rem auto 1.06667rem;
+    overflow: hidden;
+    background-image: url("../image/image_act_stars_last@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .last_week .notice {
+    position: relative;
+    width: 7.84rem;
+    height: .8rem;
+    background: #8A16AD;
+    border: 1px solid #C03CE9;
+    margin: 1.38667rem auto 0;
+    border-radius: .4rem
+}
+
+.container .last_week .notice .swiper-container-last {
+    overflow: hidden;
+    width: 6.66667rem;
+    margin-left: .58667rem
+}
+
+.container .last_week .notice .user {
+    height: .8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.container .last_week .notice .user .icon {
+    width: .58667rem;
+    height: .58667rem;
+    background-color: aliceblue;
+    margin-right: .26667rem
+}
+
+.container .last_week .notice .user .name {
+    color: #f8f8f8;
+    line-height: .58667rem;
+    font-family: "Regular";
+    font-size: .32rem;
+    color: #F8F8F8;
+    letter-spacing: 0
+}
+
+.container .last_week .notice .left, .container .last_week .notice .right {
+    position: absolute;
+    width: .85333rem;
+    height: .93333rem;
+    top: .02667rem;
+    left: -.4rem;
+    background-image: url("../image/icon_act_stars_left@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .last_week .notice .left.swiper-button-disabled, .container .last_week .notice .swiper-button-disabled.right {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none
+}
+
+.container .last_week .notice .left:focus, .container .last_week .notice .right:focus {
+    outline: none
+}
+
+.container .last_week .notice .right {
+    left: auto;
+    right: -.4rem;
+    background-image: url("../image/icon_act_stars_right@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .last_week .week_anchor > .title, .container .last_week .week_rich > .title {
+    width: 4.29333rem;
+    height: .8rem;
+    margin: .4rem auto;
+    background-image: url("../image/icon_act_stars_anchor@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .last_week .week_anchor > .ranking, .container .last_week .week_rich > .ranking {
+    width: 8.85333rem;
+    min-height: 4.37333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto
+}
+
+.container .last_week .week_anchor > .ranking > .no_data, .container .last_week .week_rich > .ranking > .no_data {
+    display: none;
+    line-height: 4.37333rem;
+    color: #f8f8f8;
+    font-size: .37333rem;
+    font-family: "Regular"
+}
+
+.container .last_week .week_anchor > .ranking > .no_data.active, .container .last_week .week_rich > .ranking > .no_data.active {
+    display: block
+}
+
+.container .last_week .week_anchor > .ranking > div, .container .last_week .week_rich > .ranking > div {
+    position: relative;
+    width: 2.82667rem;
+    height: 4.37333rem;
+    background-image: url("../image/image_act_stars_ranking@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .last_week .week_anchor > .ranking > div:nth-child(2), .container .last_week .week_rich > .ranking > div:nth-child(2) {
+    margin: 0 .13333rem
+}
+
+.container .last_week .week_anchor > .ranking > div > .title, .container .last_week .week_rich > .ranking > div > .title {
+    text-align: center;
+    font-family: "Semibold";
+    font-size: .50667rem;
+    color: #F8F8F8;
+    letter-spacing: 0;
+    margin-top: .50667rem
+}
+
+.container .last_week .week_anchor > .ranking > div > .frist_icon, .container .last_week .week_rich > .ranking > div > .frist_icon, .container .last_week .week_anchor > .ranking > div > .second_icon, .container .last_week .week_rich > .ranking > div > .second_icon, .container .last_week .week_anchor > .ranking > div > .third_icon, .container .last_week .week_rich > .ranking > div > .third_icon {
+    width: 1.49333rem;
+    height: 1.49333rem;
+    background-color: aliceblue;
+    border-radius: .74667rem;
+    margin: .21333rem auto .18667rem
+}
+
+.container .last_week .week_anchor > .ranking > div > .name, .container .last_week .week_rich > .ranking > div > .name {
+    max-width: 1.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: auto;
+    text-align: center;
+    font-family: "Regular";
+    font-size: .37333rem;
+    color: #F8F8F8;
+    letter-spacing: 0
+}
+
+.container .last_week .week_anchor > .ranking > div > .receive, .container .last_week .week_rich > .ranking > div > .receive {
+    text-align: center;
+    font-family: "Regular";
+    opacity: 0.3;
+    font-size: .29333rem;
+    color: #F8F8F8;
+    letter-spacing: 0
+}
+
+.container .last_week .week_anchor > .ranking > div:first-child::before, .container .last_week .week_rich > .ranking > div:first-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1.01333rem;
+    height: .90667rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -.24rem;
+    background-image: url("../image/icon_act_stars_crown@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .last_week .week_rich > .title {
+    background-image: url("../image/icon_act_stars_rich@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .this_week {
+    position: relative;
+    width: 8.96rem;
+    height: 3.86667rem;
+    margin: 0 auto 1.06667rem;
+    background-image: url("../image/image_act_stars_this@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .this_week .swiper-container {
+    position: absolute;
+    width: 6.13333rem;
+    height: 2.34667rem;
+    margin: 0 auto;
+    left: 50%;
+    bottom: .18667rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.container .this_week .swiper-container .swiper-wrapper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.container .this_week .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 1.33333rem;
+    height: 1.33333rem;
+    border-radius: .16rem;
+    border: .02667rem solid #C569FC
+}
+
+.container .this_week .swiper-container .swiper-wrapper .swiper-slide p {
+    font-size: .37333rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-top: .21333rem;
+    opacity: 0.6
+}
+
+.container .this_week .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border: .02667rem solid #FFEBAB
+}
+
+.container .this_week .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active p {
+    opacity: 1
+}
+
+.container .this_week .swiper-button-prev, .container .this_week .swiper-button-next {
+    width: .98667rem;
+    height: 1.06667rem;
+    left: -.32rem;
+    bottom: 1.04rem;
+    margin: 0;
+    background-image: url("../image/icon_act_stars_left_big@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .this_week .swiper-button-prev:focus, .container .this_week .swiper-button-next:focus {
+    outline: none
+}
+
+.container .this_week .swiper-button-prev::after, .container .this_week .swiper-button-next::after {
+    content: none
+}
+
+.container .this_week .swiper-button-next {
+    left: unset;
+    right: -.32rem;
+    background-image: url("../image/icon_act_stars_right_big@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star {
+    width: 9.30667rem;
+    height: 14.72rem;
+    padding-bottom: .42667rem;
+    margin: auto;
+    overflow: hidden;
+    background-image: url("../image/image_act_stars_competition@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .header {
+    width: 100%;
+    height: 1.12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.38667rem;
+    position: relative
+}
+
+.container .week_star .header::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8.82667rem;
+    height: .8rem;
+    background: #8E00AE;
+    border: .02667rem solid #CA4EFD;
+    border-radius: .16rem;
+    bottom: 0;
+    left: .24rem
+}
+
+.container .week_star .header > div {
+    width: 2.56rem;
+    height: 1.12rem;
+    z-index: 1
+}
+
+.container .week_star .header > div.week_anchor, .container .week_star .last_week .header > div.week_rich, .container .last_week .week_star .header > div.week_rich {
+    background-image: url("../image/icon_act_stars_anchor_normal@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .header > div.week_anchor.active, .container .week_star .last_week .header > div.active.week_rich, .container .last_week .week_star .header > div.active.week_rich {
+    height: .93333rem;
+    background-image: url("../image/icon_act_stars_anchor_act@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .header > div.week_rich {
+    background-image: url("../image/icon_act_stars_rich_normal@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .header > div.week_rich.active {
+    height: .93333rem;
+    background-image: url("../image/icon_act_stars_rich_act@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .header > div.active_rule {
+    background-image: url("../image/icon_act_stars_rule_normal@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .header > div.active_rule.active {
+    height: .93333rem;
+    background-image: url("../image/icon_act_stars_rule_act@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .week_anchor_content, .container .week_star .week_rich_content {
+    width: 100%;
+    height: 11.6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: .26667rem;
+    display: none
+}
+
+.container .week_star .week_anchor_content.active, .container .week_star .active.week_rich_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.container .week_star .week_anchor_content > div, .container .week_star .week_rich_content > div {
+    width: 8.85333rem;
+    height: 2.08rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-image: url("../image/image_act_stars_ranking_top@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: .05333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.container .week_star .week_anchor_content > div .icon, .container .week_star .week_rich_content > div .icon {
+    width: 1.01333rem;
+    height: .8rem;
+    margin-left: .50667rem
+}
+
+.container .week_star .week_anchor_content > div:first-child .icon, .container .week_star .week_rich_content > div:first-child .icon {
+    background-image: url("../image/icon_act_stars_ranking_top1@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .week_anchor_content > div:nth-child(2) .icon, .container .week_star .week_rich_content > div:nth-child(2) .icon {
+    background-image: url("../image/icon_act_stars_ranking_top2@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .week_anchor_content > div:nth-child(3) .icon, .container .week_star .week_rich_content > div:nth-child(3) .icon {
+    background-image: url("../image/icon_act_stars_ranking_top3@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.container .week_star .week_anchor_content > div .font, .container .week_star .week_rich_content > div .font {
+    width: 1.01333rem;
+    text-align: center;
+    font-family: "Semibold";
+    font-size: .42667rem;
+    color: #F8F8F8;
+    letter-spacing: 0;
+    margin-left: .50667rem
+}
+
+.container .week_star .week_anchor_content > div .via, .container .week_star .week_rich_content > div .via {
+    width: 1.17333rem;
+    height: 1.17333rem;
+    border-radius: .58667rem;
+    background-color: #D8D8D8;
+    margin-left: .32rem;
+    margin-right: .18667rem
+}
+
+.container .week_star .week_anchor_content > div .explain, .container .week_star .week_rich_content > div .explain {
+    max-width: 4.26667rem
+}
+
+.container .week_star .week_anchor_content > div .explain p, .container .week_star .week_rich_content > div .explain p {
+    font-family: "Regular";
+    font-size: .42667rem;
+    color: #F8F8F8;
+    letter-spacing: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.container .week_star .week_anchor_content > div .explain .hint, .container .week_star .week_rich_content > div .explain .hint {
+    font-size: .32rem;
+    opacity: 0.6
+}
+
+.container .week_star .active_rule_content {
+    width: 8.72rem;
+    margin: auto;
+    display: none
+}
+
+.container .week_star .active_rule_content.active {
+    display: block
+}
+
+.container .week_star .active_rule_content .font_yellow {
+    color: #EDBB5C
+}
+
+.container .week_star .active_rule_content .rule {
+    width: 100%;
+    height: 4.98667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: .4rem
+}
+
+.container .week_star .active_rule_content .rule .icon {
+    width: 4.29333rem;
+    height: 1.17333rem;
+    background-image: url("../image/icon_act_stars_rule@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto
+}
+
+.container .week_star .active_rule_content .rule .content {
+    width: 8.10667rem;
+    height: 3.17333rem;
+    background: #8A16AD;
+    border: .02667rem solid #CE1EFC;
+    border-radius: .21333rem;
+    padding-top: .32rem;
+    padding-left: .56rem;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto
+}
+
+.container .week_star .active_rule_content .rule .content p {
+    max-width: 7.73333rem;
+    font-family: "Semibold";
+    font-size: .32rem;
+    color: #F8F8F8;
+    letter-spacing: 0;
+    margin-bottom: .21333rem
+}
+
+.container .week_star .active_rule_content .award {
+    width: 100%;
+    height: 6.13333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: .4rem
+}
+
+.container .week_star .active_rule_content .award .icon {
+    width: 4.29333rem;
+    height: 1.17333rem;
+    background-image: url("../image/icon_act_stars_reward@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.container .week_star .active_rule_content .award .content {
+    width: 8.72rem;
+    height: 4.66667rem;
+    background: #8A16AD;
+    border: .02667rem solid #CE1EFC;
+    border-radius: .21333rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.container .week_star .active_rule_content .award .content > div {
+    height: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid #CE1EFC
+}
+
+.container .week_star .active_rule_content .award .content > div div {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: .32rem;
+    letter-spacing: 0;
+    font-family: "Semibold";
+    border-right: 1px solid #CE1EFC;
+    width: 3.28rem;
+    text-align: center
+}
+
+.container .week_star .active_rule_content .award .content > div div:first-child {
+    width: 2.10667rem
+}
+
+.container .week_star .active_rule_content .award .content > div div:nth-child(3) {
+    border: none
+}
+
+.container .week_star .active_rule_content .award .content .title {
+    height: .98667rem;
+    color: #F8F8F8;
+    border-top: none
+}
+
+/*# sourceMappingURL=weekStar.min.css.map */

@@ -1,0 +1,317 @@
+/*common css*/
+.stepPage {
+  display: none;
+  height : 100%;
+}
+
+.stepCont {
+  width: 100%;
+}
+
+.ystep-container {
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Wenquanyi Micro Hei", "Microsoft Yahei", Arial, sans-serif;
+  display    : inline-block;
+  position   : relative;
+  color      : #000;
+  margin     : 20px;
+}
+
+.ystep-container ul {
+  list-style: none;
+}
+
+.ystep-container ul,
+.ystep-container li,
+.ystep-container p {
+  margin : 0;
+  padding: 0;
+}
+
+/*size css*/
+.ystep-lg {
+  /*width: 700px;*/
+  width      : 100%;
+  height     : 60px;
+  font-size  : 18px;
+  /*left     : 15%;*/
+  line-height: .3;
+}
+
+/*large size css*/
+.ystep-lg .ystep-container-steps {
+  position: absolute;
+  top     : 2px;
+  cursor  : pointer;
+  z-index : 10;
+}
+
+.ystep-lg li {
+  float       : left;
+  width       : 100px;
+  /*height    : 85px;*/
+  margin-right: 100px;
+  line-height : 23px;
+  box-sizing  : border-box;
+
+}
+
+.ystep-lg .ystep-progress {
+  width       : 400px;
+  height      : 3px;
+  position    : absolute;
+  top         : 34px;
+  left        : 15px;
+  float       : left;
+  margin-right: 10px;
+  overflow    : hidden;
+  background  : #C0C4CC;
+}
+
+.ystep-lg .ystep-progress-bar {
+  width     : 400px;
+  height    : 20px;
+  background: #e4e4e4;
+  display   : inline-block;
+  float     : left;
+}
+
+.ystep-lg .ystep-progress-highlight {
+  height : 20px;
+  display: block;
+}
+
+/*blue css*/
+.ystep-blue .ystep-step-done {
+  /*background-image: url("./images/pointes_blue.png");
+  background-repeat: no-repeat;*/
+}
+
+.ystep-blue .ystep-step-undone {
+  /*background-image: url("./images/pointes_blue.png");
+  background-repeat: no-repeat;
+  color: #9c9a9b;*/
+}
+
+.ystep-blue .ystep-step-active {
+  /*background-image: url("./images/pointes_blue.png");
+  background-repeat: no-repeat;*/
+  color: #3276b1;
+}
+
+.ystep-blue .ystep-progress-highlight {
+  background: #F92C56;
+}
+
+/*按钮样式*/
+.ystep {
+  padding    : 20px;
+  /*min-width: 1114px;*/
+}
+
+.step-button {
+  position: relative;
+  /*top   : -85px;*/
+}
+
+.step-button button {
+  margin: 15px;
+}
+
+.stepIcon {}
+
+.ystep-lg .ystep-step-done .stepIcon {
+  border          : 1px solid #2D5FAD;
+  border-radius   : 20px;
+  width           : 20px;
+  height          : 20px;
+  display         : block;
+  text-align      : center;
+  margin-top      : 22px;
+  margin-left     : 8px;
+  color           : white;
+  background-color: #1E87F0;
+  /*background    :#fff url(images/duihao.png) no-repeat 1px 4px;*/
+  background-size : 80%;
+}
+
+.ystep-lg .ystep-step-undone .stepIcon {
+  border       : 1px solid #909399;
+  border-radius: 20px;
+  width        : 20px;
+  height       : 20px;
+  display      : block;
+  text-align   : center;
+  margin-top   : 22px;
+  margin-left  : 8px;
+  color        : #909399;
+  background   : #fff;
+}
+
+.ystep-lg .ystep-step-active .stepIcon {
+  border       : 1px solid #303133;
+  border-radius: 20px;
+  width        : 20px;
+  height       : 20px;
+  display      : block;
+  text-align   : center;
+  margin-top   : 22px;
+  margin-left  : 8px;
+  color        : #303133;
+  background   : #fff;
+}
+
+.ystep-container .descriptionHeader {
+  width     : 157px;
+  margin-top: 5px;
+  font-size : 14px;
+
+
+}
+
+.ystep-container .description {
+  width    : 120px;
+  font-size: 10px;
+}
+
+
+
+/*****************************竖向步骤条设置**************************/
+
+.stepY .ystep-lg {
+  width      : 160px;
+  height     : 60px;
+  font-size  : 18px;
+  line-height: .3;
+  float      : left;
+}
+
+.stepY .pageCont {
+  width: calc(100% - 210px);
+  float: right;
+}
+
+.stepY .ystep-lg li {
+  width      : 150px;
+  line-height: 23px;
+  box-sizing : border-box;
+
+}
+
+.stepY .ystep-lg .ystep-progress {
+  height      : 400px;
+  width       : 3px;
+  position    : absolute;
+  top         : 34px;
+  left        : 17px;
+  float       : left;
+  margin-right: 10px;
+  overflow    : hidden;
+  background  : #C0C4CC;
+}
+
+.stepY .ystep-lg .ystep-progress-bar {
+  width     : 20px;
+  height    : 400px;
+  background: #e4e4e4;
+  display   : inline-block;
+  float     : left;
+}
+
+.stepY .ystep-lg .ystep-progress-highlight {
+  width  : 20px;
+  display: block;
+}
+
+.stepY .ystep-container .descriptionHeader {
+  width      : 157px;
+  margin-top : -22px;
+  font-size  : 14px;
+  float      : left;
+  margin-left: 35px;
+
+}
+
+.stepY .ystep-container .description {
+  width      : 120px;
+  font-size  : 10px;
+  float      : left;
+  margin-left: 35px;
+}
+
+.clearfix:after {
+  content    : "";
+  height     : 0;
+  line-height: 0;
+  display    : block;
+  visibility : hidden;
+  clear      : both;
+}
+
+/*-----------------箭头步骤条------------------*/
+
+.jiantou li {
+  margin-right: 0px;
+  background  : #F0F2F5;
+}
+
+.jiantou .descriptionHeader {
+  float     : right;
+  width     : 120px;
+  margin-top: -30px;
+  font-size : 14px;
+}
+
+.jiantou .tubiao {
+  font-size  : 30px;
+  float      : right;
+  line-height: 20px;
+}
+
+.jiantou .ystep-lg .ystep-step-done .stepIcon {
+  border          : 1px solid #2D5FAD;
+  border-radius   : 20px;
+  width           : 20px;
+  height          : 20px;
+  display         : block;
+  text-align      : center;
+  margin-top      : 10px;
+  margin-bottom   : 10px;
+  margin-left     : 8px;
+  color           : white;
+  background-color: #1E87F0;
+  /*background    :#fff url(images/duihao.png) no-repeat 1px 4px;*/
+  background-size : 80%;
+
+}
+
+.jiantou .ystep-lg .ystep-step-done .descriptionHeader {
+  color: #2D5FAD;
+}
+
+.jiantou .ystep-lg .ystep-step-undone .stepIcon {
+  border       : 1px solid #909399;
+  border-radius: 20px;
+  width        : 20px;
+  height       : 20px;
+  display      : block;
+  text-align   : center;
+  margin-top   : 10px;
+  margin-bottom: 10px;
+  margin-left  : 8px;
+  color        : #909399;
+  background   : #F0F2F5;
+}
+
+.jiantou .ystep-lg .ystep-step-active .stepIcon {
+  border       : 1px solid #303133;
+  border-radius: 20px;
+  width        : 20px;
+  height       : 20px;
+  display      : block;
+  text-align   : center;
+  margin-top   : 10px;
+  margin-bottom: 10px;
+  margin-left  : 8px;
+  color        : #303133;
+  background   : #F0F2F5;
+}

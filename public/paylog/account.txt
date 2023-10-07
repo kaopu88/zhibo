@@ -1,0 +1,9 @@
+
+array (
+  'username' => 'admin123',
+  'password' => '123456',
+  'type' => 'account',
+  'invite_code' => 'yvEDcJ',
+  'user_id' => '100286',
+  'anchor' => '',
+)

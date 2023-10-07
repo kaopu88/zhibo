@@ -1,0 +1,660 @@
+@font-face {
+  font-family: PingFangSC-Semibold;
+  src: url("/bx_static/admin/style/PingFang/PingFang-SC-Semibold-2.ttf");
+}
+
+@font-face {
+  font-family: PingFangSC-Regular;
+  src: url("/bx_static/admin/style/PingFang/PingFang-Jian-ChangGuiTi-2.ttf");
+}
+
+@keyframes getFocus {
+  from {
+    margin-left: 50%;
+    border-bottom: 2px solid #e6e6e6;
+    width: 0;
+  }
+  to {
+    margin-left: 0;
+    border-bottom: 2px solid #1E9FFF;
+    width: 100%;
+  }
+}
+
+@keyframes removeFocus {
+  0% {
+    margin-left: 0;
+    border-bottom: 2px solid #1E9FFF;
+    width: 100%;
+  }
+  50% {
+    margin-left: 50%;
+    border-bottom: 2px solid #e6e6e6;
+    width: 0;
+  }
+  100% {
+    margin-left: 0;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+  }
+}
+
+@keyframes input_background {
+  0% {
+    width: 100%;
+    background: none;
+  }
+  100% {
+    width: 0;
+    background-color: #b5dbf7;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .layui-show-sm-flex {
+    display: flex !important;
+  }
+  .login_left_container {
+    width: 247px;
+    height: 594px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    top: 50%;
+    margin-top: -297px;
+  }
+  .bingxin_logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+  }
+  .login_text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .layui-show-sm-flex {
+    display: flex !important;
+  }
+  .login_left_container {
+    width: auto;
+    height: auto;
+    position: unset;
+  }
+  .bingxin_logo {
+    position: absolute;
+    top: 14%;
+    left: 136px;
+    width: 56px;
+    height: 56px;
+  }
+  .login_text {
+    position: absolute;
+    bottom: 14%;
+    left: 136px;
+  }
+}
+
+.bingxin_logo img {
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+
+input:-moz-placeholder {
+  color: #c8c8c8;
+}
+
+input::-moz-placeholder {
+  color: #c8c8c8;
+}
+
+input:-ms-input-placeholder {
+  color: #c8c8c8;
+}
+
+.user.change::-moz-placeholder,
+.user_app.change::-moz-placeholder,
+.password.change::-moz-placeholder,
+.password_app.change::-moz-placeholder,
+.my_account.change::-moz-placeholder,
+.my_account_app.change::-moz-placeholder,
+.code.change::-moz-placeholder,
+.code_app.change::-moz-placeholder,
+.new_password.change::-moz-placeholder,
+.new_password_app.change::-moz-placeholder,
+.re_password.change::-moz-placeholder,
+.re_password_app.change::-moz-placeholder {
+  color: #FF3065;
+}
+
+.user.change::-webkit-input-placeholder,
+.user_app.change::-webkit-input-placeholder,
+.password.change::-webkit-input-placeholder,
+.password_app.change::-webkit-input-placeholder,
+.my_account.change::-webkit-input-placeholder,
+.my_account_app.change::-webkit-input-placeholder,
+.code.change::-webkit-input-placeholder,
+.code_app.change::-webkit-input-placeholder,
+.new_password.change::-webkit-input-placeholder,
+.new_password_app.change::-webkit-input-placeholder,
+.re_password.change::-webkit-input-placeholder,
+.re_password_app.change::-webkit-input-placeholder {
+  color: #FF3065;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.t {
+  font-family: PingFangSC-Semibold;
+  color: #F8F8F8;
+  letter-spacing: 0.5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.m-r-0 {
+  margin-right: 0 !important;
+}
+
+.m-l-30 {
+  margin-left: 20px !important;
+}
+
+.m-b-31dot5 {
+  margin-bottom: 31.5px !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.t-120 {
+  top: 120px !important;
+}
+
+.h-470 {
+  height: 470px !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.login,
+.cima_login,
+.broker_login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  background: url(../../../assets/pexels-photo-background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cima_login {
+  background: url(../../../assets/pexels-photo-Guildbackground.jpg) no-repeat center center fixed;
+}
+
+.broker_login {
+  background: url(../../../assets/pexels-photo-broker.jpg) no-repeat center center fixed;
+}
+
+.login_left {
+  flex-grow: 1;
+}
+
+.login_main {
+  position: relative;
+  width: 449px;
+  height: 100%;
+  right: 0;
+  background-color: #FFFFFF;
+  flex-grow: 0;
+}
+
+.login_nav {
+  width: 274px;
+  height: 25px;
+  float: right;
+  margin: 38px 30px 0 0;
+}
+
+.login_nav li {
+  margin-right: 15px;
+  float: left;
+}
+
+.login_nav li .icon {
+  display: block;
+  float: left;
+  margin-right: 5.7px;
+}
+
+.login_nav li a {
+  font-family: PingFangSC-Semibold;
+  font-size: 12px;
+  color: #8C8C8C;
+  letter-spacing: 0;
+}
+
+.login_nav_app {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login_nav_app li a {
+  font-family: PingFangSC-Semibold;
+  font-size: 12px;
+  color: #8C8C8C;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.login_nav_app li .icon {
+  display: block;
+  margin: auto;
+}
+
+.union {
+  width: 20px;
+  height: 17px;
+  background-image: url("../../../assets/icon-guild@3x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .union {
+    background-image: url("../../../assets/icon-guild@3x.png");
+  }
+}
+
+.broker {
+  width: 18px;
+  height: 18px;
+  background-image: url("../../../assets/icon-broker@3x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .broker {
+    background-image: url("../../../assets/icon-broker@3x.png");
+  }
+}
+
+.live {
+  width: 17px;
+  height: 17px;
+  background-image: url("../../../assets/icon-Official-website@3x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .live {
+    background-image: url("../../../assets/icon-Official-website@3x.png");
+  }
+}
+
+.contact_icon {
+  width: 17px;
+  height: 17px;
+  background-image: url("../../../assets/icon-contact-us@3x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .contact_icon {
+    background-image: url("../../../assets/icon-contact-us@3x.png");
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.space {
+  position: relative;
+  top: 10px;
+}
+
+.space_s {
+  position: relative;
+  top: 20px;
+}
+
+.welcome {
+  position: relative;
+  left: 0;
+  font-family: PingFangSC-Semibold;
+  font-size: 28px;
+  color: #282828;
+  letter-spacing: 0.5px;
+}
+
+.icon_user {
+  width: 15px;
+  height: 17px;
+  margin-top: 9px;
+  background-image: url("../../../assets/icon-accountnumber@3x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .icon_user {
+    background-image: url("../../../assets/icon-accountnumber@3x.png");
+  }
+}
+
+.icon_password {
+  width: 15px;
+  height: 17px;
+  margin-top: 9px;
+  background-image: url("../../../assets/icon-password@3x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .icon_password {
+    background-image: url("../../../assets/icon-password@3x.png");
+  }
+}
+
+.input_text {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #282828;
+  letter-spacing: 0.5px;
+  border: none;
+  background: none;
+  margin-top: 8px;
+}
+
+.layui-form-item img,
+.layui-form-item div {
+  float: left;
+}
+
+.form_style {
+  margin: auto;
+  width: 268px;
+  height: 245px;
+  position: absolute;
+  bottom: 0;
+}
+
+.eye_icon {
+  width: 22px;
+  height: 15px;
+  float: right !important;
+  margin-top: 10px;
+  cursor: pointer;
+  background-image: url("../../../assets/icon-display@3x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .eye_icon {
+    background-image: url("../../../assets/icon-display@3x.png");
+  }
+}
+
+.rememb {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #C8C8C8;
+  letter-spacing: 0;
+  margin-left: 10px;
+}
+
+.forget_password {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #0091FF;
+  letter-spacing: 0;
+  float: right;
+}
+
+.login_center {
+  width: 268px;
+  margin: auto;
+  height: 316px;
+  position: relative;
+  top: 50%;
+  margin-top: -158px;
+}
+
+.login_btn,
+.login_btn_app {
+  position: relative;
+  width: 227px !important;
+  height: 44px;
+  margin-top: 20px;
+  margin-left: 20.5px;
+}
+
+.login_text_top {
+  font-family: PingFangSC-Semibold;
+  font-size: 40px;
+  color: #F8F8F8;
+  letter-spacing: 1px;
+  line-height: 55px;
+}
+
+.login_text_bottom {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #F8F8F8;
+  letter-spacing: 0.75px;
+  line-height: 22px;
+  margin-top: 15px;
+}
+
+.err_phone {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  display: none;
+  color: #FF3065;
+  letter-spacing: 0.5px;
+  position: absolute;
+  right: 0;
+  top: 44px;
+}
+
+.layui-form-checkbox[lay-skin="primary"] {
+  padding-left: 0 !important;
+  margin-top: -4px;
+  min-width: 10px !important;
+  min-height: 10px !important;
+}
+
+.layui-form-checked[lay-skin="primary"] i {
+  border-color: #0091FF !important;
+  background-color: #0091FF !important;
+  color: #fff;
+}
+
+.layui-form-checkbox[lay-skin="primary"]:hover i {
+  border-color: #0091FF;
+}
+
+.layui-form-checkbox[lay-skin="primary"] i {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.layui-icon-ok:before {
+  content: "\e605";
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+.layui-form-item-user {
+  margin-bottom: 38.5px;
+}
+
+.layui-input {
+  height: 30px;
+  width: 185px !important;
+  margin-top: 3px;
+}
+
+.contact {
+  display: none;
+  align-items: center;
+  width: 100%;
+  height: 408px;
+  position: absolute;
+  top: 50%;
+  margin-top: -204px;
+}
+
+.contact_us_img {
+  width: 214px;
+  position: absolute;
+  top: 50%;
+  display: block;
+  margin-top: -107px;
+  left: 50%;
+  margin-left: -107px;
+}
+
+.contact_us_img img {
+  width: 100%;
+}
+
+.contact_text {
+  font-family: PingFangSC-Semibold;
+  font-size: 28px;
+  color: #282828;
+  letter-spacing: 0.5px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.contact_us {
+  cursor: pointer;
+}
+
+.back_btn,
+.fogetpassword_back_btn {
+  width: 227px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -113.5px;
+}
+
+.hide {
+  z-index: 1;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 13.5px;
+  left: 20px;
+  color: #000000;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.getfocus {
+  animation: getFocus 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.removefocus {
+  animation: removeFocus 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.hr {
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.user_top {
+  top: 39px;
+}
+
+.password_top {
+  top: 115px;
+}
+
+.send_code {
+  width: 73px;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #0091FF;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  height: 25px;
+  color: #282828;
+  letter-spacing: 0;
+  z-index: 1;
+  margin: 9.5px auto;
+}
+
+.login_main_app {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background-color: #FFFFFF;
+}
+
+.login_center_app {
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  margin: auto;
+  height: 460px;
+  position: relative;
+  top: 50%;
+  margin-top: -230px;
+}
+
+.form_style_app {
+  margin: auto;
+  width: 268px;
+  height: 245px;
+  position: relative;
+  margin-top: 50px;
+}

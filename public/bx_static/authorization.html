@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="renderer" content="webkit" />
+    <meta name="applicable-device" content="pc" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="application-name" content="" />
+    <meta name="renderer" content="webkit" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./layui.css" />
+    <link rel="stylesheet" href="./authorization.css" />
+    <script src="./layui.js"></script>
+    <script src="./media_auto.js"></script>
+    <title>秉信直播系统</title>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon">
+            <img src="./admin/assets/icon_befault_gb@3x.png" />
+        </a>
+        <h1 class="mui-title">秉信直播系统</h1>
+        <div class="more_icon"></div>
+    </header>
+    <!-- 审核失败 -->
+    <div class="container fail" style="display: none;">
+        <div class="authorzation_icon"></div>
+        <div class="content">
+            <p>授权失败</p>
+            <p class="fail-reason">备案失败：很抱歉，您已经是合作方，无法成为其他合作方的渠道。</p>
+        </div>
+        <div class="btn">返回</div>
+    </div>
+    <!-- 审核成功 -->
+    <div class="container success" style="display: none;">
+        <div class="authorzation_icon"></div>
+        <div class="content">
+            <p>授权成功</p>
+        </div>
+        <div class="btn">返回<span>（3）</span></div>
+    </div>
+</body>
+</html>
+<script>
+    window.onload = function(){
+        var status = getQueryVariable("status");
+        var fail = document.getElementsByClassName("fail");
+        var reason = document.getElementsByClassName("fail-reason");
+        var success = document.getElementsByClassName("success");
+        if(status == 1){
+            success[0].style.display="block";
+
+        }else if (status == 2){
+            var content = getQueryVariable("content");
+            fail[0].style.display="block";
+            reason[0].style.display="block";
+            reason[0].innerHTML=decodeURI(content);
+
+        } else if (status == 3){
+            fail[0].style.display="block";
+
+        }
+    };
+
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+</script>

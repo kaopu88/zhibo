@@ -1,0 +1,21 @@
+{
+  "name": "chatroom_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "author": "xulinyang",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.16.3",
+    "multer": "^1.3.0",
+    "nodemailer": "^4.6.4",
+    "redis": "^2.6.0-1",
+    "redis-scanner": "^0.1.1",
+    "socket.io": "^1.4.5"
+  }
+}

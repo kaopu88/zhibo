@@ -1,0 +1,1433 @@
+@font-face {
+  font-family: "PingFangSC-Regular";
+  src: url("./admin/style/PingFang/.PingFangSC-Regular.ttf");
+  src: url("./admin/style/PingFang/PingFangSC-Regular.eot?#font-spider") format("embedded-opentype"), url("./admin/style/PingFang/PingFangSC-Regular.woff") format("woff"), url("./admin/style/PingFang/PingFangSC-Regular.ttf") format("truetype"), url("./admin/style/PingFang/PingFangSC-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "PingFangSC-Semibold";
+  src: url("./admin/style/PingFang/PingFangSC-Semibold.ttf");
+  src: url("./admin/style/PingFang/PingFangSC-Semibold.eot?#font-spider") format("embedded-opentype"), url("./admin/style/PingFang/PingFangSC-Semibold.woff") format("woff"), url("./admin/style/PingFang/PingFangSC-Semibold.ttf") format("truetype"), url("./admin/style/PingFang/PingFangSC-Semibold.svg") format("svg"); }
+
+:root {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  position: relative;
+  width: 10rem;
+  margin: auto; }
+  .container.Invite_friends header, .container.strategy header, .container.activety_set header, .container.earnings header {
+    position: relative;
+    width: 10rem;
+    height: 1.17333rem;
+    line-height: 1.17333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white; }
+    .container.Invite_friends header > .back, .container.strategy header > .back, .container.activety_set header > .back, .container.earnings header > .back {
+      position: relative;
+      width: 0.24rem;
+      height: 0.42667rem;
+      background-image: url("./admin/assets/nav_icon_hei@2x.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 0.32rem; }
+      @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .container.Invite_friends header > .back, .container.strategy header > .back, .container.activety_set header > .back, .container.earnings header > .back {
+          background-image: url("./admin/assets/nav_icon_hei@3x.png");
+          background-repeat: no-repeat;
+          background-size: contain; } }
+    .container.Invite_friends header .title, .container.strategy header .title, .container.activety_set header .title, .container.earnings header .title {
+      font-family: "PingFangSC-Semibold";
+      font-size: 0.48rem;
+      color: #282828;
+      letter-spacing: 0;
+      margin: auto; }
+    .container.Invite_friends header .explain, .container.strategy header .explain, .container.activety_set header .explain, .container.earnings header .explain {
+      position: absolute;
+      font-family: "PingFangSC-Regular";
+      font-size: 0.37333rem;
+      color: #282828;
+      letter-spacing: 0;
+      right: 0.32rem; }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .container .backdrop,
+    .container > header {
+      padding-top: 44px; } }
+  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+    .container .backdrop,
+    .container > header {
+      padding-top: 44px; } }
+  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    .container .backdrop,
+    .container > header {
+      padding-top: 44px; } }
+  .container.withdrawal_activities .backdrop {
+    width: 10rem;
+    height: 6.48rem;
+    background-image: url("./admin/assets/act_image_bjtp@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
+    @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+      .container.withdrawal_activities .backdrop {
+        background-image: url("./admin/assets/act_image_bjtp@3x.png");
+        background-repeat: no-repeat;
+        background-size: contain; } }
+    .container.withdrawal_activities .backdrop header {
+      height: 1.17333rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0 0.32rem;
+      background-color: transparent; }
+      .container.withdrawal_activities .backdrop header .back {
+        width: 0.24rem;
+        height: 0.42667rem;
+        background-image: url("./admin/assets/nav_icon_white@2x.png");
+        background-repeat: no-repeat;
+        background-size: contain; }
+        @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+          .container.withdrawal_activities .backdrop header .back {
+            background-image: url("./admin/assets/nav_icon_white@3x.png");
+            background-repeat: no-repeat;
+            background-size: contain; } }
+      .container.withdrawal_activities .backdrop header .set {
+        width: 0.42667rem;
+        height: 0.42667rem;
+        background-image: url("./admin/assets/nav_icon_sz@2x.png");
+        background-repeat: no-repeat;
+        background-size: contain; }
+        @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+          .container.withdrawal_activities .backdrop header .set {
+            background-image: url("./admin/assets/nav_icon_sz@3x.png");
+            background-repeat: no-repeat;
+            background-size: contain; } }
+    .container.withdrawal_activities .backdrop .earnings {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 7.33333rem;
+      margin: 0.42667rem auto 0;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .container.withdrawal_activities .backdrop .earnings > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .container.withdrawal_activities .backdrop .earnings > div .title {
+          font-family: "PingFangSC-Regular";
+          font-size: 0.37333rem;
+          color: #EDF2F4;
+          letter-spacing: 0.5px; }
+        .container.withdrawal_activities .backdrop .earnings > div .content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          font-family: "PingFangSC-Semibold";
+          font-size: 0.8rem;
+          color: #EDF2F4;
+          letter-spacing: 0.5px;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end; }
+          .container.withdrawal_activities .backdrop .earnings > div .content .gold_icon {
+            width: 0.32rem;
+            height: 0.32rem;
+            padding-bottom: 0.21333rem;
+            margin-left: 0.29333rem;
+            background-image: url("./admin/assets/icon_disabled_jb@2x.png");
+            background-repeat: no-repeat;
+            background-size: contain; }
+            @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+              .container.withdrawal_activities .backdrop .earnings > div .content .gold_icon {
+                background-image: url("./admin/assets/icon_disabled_jb@3x.png");
+                background-repeat: no-repeat;
+                background-size: contain; } }
+          .container.withdrawal_activities .backdrop .earnings > div .content .go_gold {
+            width: 0.16rem;
+            height: 0.29333rem;
+            padding-bottom: 0.21333rem;
+            margin-left: 0.29333rem;
+            background-image: url("./admin/assets/icon_default_xjsy@2x.png");
+            background-repeat: no-repeat;
+            background-size: contain; }
+            @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+              .container.withdrawal_activities .backdrop .earnings > div .content .go_gold {
+                background-image: url("./admin/assets/icon_default_xjsy@3x.png");
+                background-repeat: no-repeat;
+                background-size: contain; } }
+          .container.withdrawal_activities .backdrop .earnings > div .content .yuan {
+            font-size: 0.32rem;
+            font-family: "PingFangSC-Regular";
+            color: #EDF2F4;
+            letter-spacing: 0.5px;
+            line-height: 0.74667rem;
+            margin-left: 0.29333rem; }
+    .container.withdrawal_activities .backdrop footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 0.32rem;
+      font-family: "PingFangSC-Regular";
+      color: #D1D1D1;
+      margin-top: 0.4rem;
+      letter-spacing: 0;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .container.withdrawal_activities .backdrop footer::after {
+        content: '';
+        width: 0.32rem;
+        height: 0.32rem;
+        display: inline-block;
+        margin-left: 0.08rem;
+        margin-top: 0.05333rem;
+        background-image: url("./admin/assets/icon_default_dhsm_sy@2x.png");
+        background-repeat: no-repeat;
+        background-size: contain; }
+        @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+          .container.withdrawal_activities .backdrop footer::after {
+            background-image: url("./admin/assets/icon_default_dhsm_sy@3x.png");
+            background-repeat: no-repeat;
+            background-size: contain; } }
+  .container.withdrawal_activities > .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 10rem;
+    margin-top: -1.49333rem;
+    background: #F3F3F3;
+    border-radius: 0.32rem 0.32rem 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .container.withdrawal_activities > .content .img_top {
+      width: 9.04rem;
+      height: 1.81333rem;
+      background-image: url("./admin/assets/banner_image_lhb@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0.50667rem 0 0.45333rem 0.29333rem; }
+      @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .container.withdrawal_activities > .content .img_top {
+          background-image: url("./admin/assets/banner_image_lhb@3x.png");
+          background-repeat: no-repeat;
+          background-size: cover; } }
+    .container.withdrawal_activities > .content .task .title {
+      font-family: "PingFangSC-Semibold";
+      font-size: 0.37333rem;
+      color: #282828;
+      letter-spacing: 0.01333rem;
+      padding-left: 0.32rem; }
+    .container.withdrawal_activities > .content .task .list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .container.withdrawal_activities > .content .task .list .list_content {
+        position: relative;
+        width: 9.36rem;
+        min-height: 2.24rem;
+        background: #FFFFFF;
+        border-radius: 0.13333rem;
+        margin: 0 auto 0.26667rem; }
+        .container.withdrawal_activities > .content .task .list .list_content:first-child {
+          margin-top: 0.26667rem; }
+        .container.withdrawal_activities > .content .task .list .list_content > div.list_title {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 0.53333rem; }
+          .container.withdrawal_activities > .content .task .list .list_content > div.list_title .font {
+            font-family: "PingFangSC-Semibold";
+            font-size: 0.42667rem;
+            color: #282828;
+            letter-spacing: 0.01333rem;
+            margin: 0 0.13333rem 0 0.4rem; }
+          .container.withdrawal_activities > .content .task .list .list_content > div.list_title .red_packet {
+            width: 1.57333rem;
+            height: 0.58667rem;
+            background-image: url("./admin/assets/image_normal_mdz@2x.png");
+            background-repeat: no-repeat;
+            background-size: contain; }
+            @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+              .container.withdrawal_activities > .content .task .list .list_content > div.list_title .red_packet {
+                background-image: url("./admin/assets/image_normal_mdz@3x.png");
+                background-repeat: no-repeat;
+                background-size: contain; } }
+          .container.withdrawal_activities > .content .task .list .list_content > div.list_title .bg_gold {
+            height: 0.58667rem;
+            line-height: 0.58667rem;
+            background-image: url("./admin/assets/image_normal_mrqd@2x.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 0.02667rem;
+            font-family: "PingFangSC-Semibold";
+            font-size: 0.32rem;
+            color: #D8B73C;
+            letter-spacing: 0.5px;
+            padding-left: 0.58667rem;
+            padding-right: 0.13333rem; }
+            @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+              .container.withdrawal_activities > .content .task .list .list_content > div.list_title .bg_gold {
+                background-image: url("./admin/assets/image_normal_mrqd@3x.png");
+                background-repeat: no-repeat;
+                background-size: contain; } }
+        .container.withdrawal_activities > .content .task .list .list_content > div.list_details {
+          max-width: 5.76rem;
+          font-family: "PingFangSC-Regular";
+          font-size: 0.32rem;
+          color: #8C8C8C;
+          letter-spacing: 0.01333rem;
+          margin: 0.13333rem 0 0.53333rem 0.4rem; }
+        .container.withdrawal_activities > .content .task .list .list_content > a.go_withdraw {
+          position: absolute;
+          display: block;
+          width: 2.34667rem;
+          height: 0.93333rem;
+          line-height: 0.93333rem;
+          right: 0.4rem;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          background: #F92C56;
+          border: 1px solid transparent;
+          border-radius: 0.48rem;
+          font-family: "PingFangSC-Semibold";
+          font-size: 0.37333rem;
+          color: #EDF2F4;
+          letter-spacing: 0.58px;
+          text-align: center; }
+          .container.withdrawal_activities > .content .task .list .list_content > a.go_withdraw.done {
+            border: 1px solid #F92C56;
+            color: #F92C56;
+            background: white; }
+        .container.withdrawal_activities > .content .task .list .list_content .stepCont {
+          position: relative;
+          margin-top: -0.26667rem; }
+          .container.withdrawal_activities > .content .task .list .list_content .stepCont .ystep-container {
+            margin: 0;
+            height: 2.13333rem !important;
+            left: 0.56rem !important; }
+            .container.withdrawal_activities > .content .task .list .list_content .stepCont .ystep-container .descriptionHeader {
+              font-family: "PingFangSC-Regular";
+              font-size: 0.26667rem;
+              color: #8C8C8C;
+              letter-spacing: 0; }
+            .container.withdrawal_activities > .content .task .list .list_content .stepCont .ystep-container .stepIcon {
+              border: 1px solid white;
+              background-color: white;
+              width: 0.16rem;
+              height: 0.08rem;
+              margin-top: 31px; }
+            .container.withdrawal_activities > .content .task .list .list_content .stepCont .ystep-container .descriptionHeader {
+              width: auto;
+              white-space: nowrap;
+              margin: 0 0 0 -0.13333rem; }
+          .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont {
+            position: absolute;
+            top: 0; }
+            .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage {
+              height: 0.64rem;
+              line-height: 0.64rem;
+              border: 1px solid #F92C56;
+              position: relative;
+              border-radius: 0.32rem;
+              font-family: "PingFangSC-Regular";
+              font-size: 0.26667rem;
+              color: #F92C56;
+              letter-spacing: 0;
+              padding: 0 0.13333rem; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage::before, .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 4px solid transparent;
+                border-top-color: #F92C56;
+                left: 50%;
+                margin-left: -4px;
+                bottom: -8px; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage::after {
+                border-top-color: #fff;
+                bottom: -7px; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage:nth-child(1) {
+                display: none !important; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage:nth-child(2) {
+                left: 0.8rem; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage:nth-child(3) {
+                left: 1.86667rem; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage:nth-child(4) {
+                left: 3.2rem; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage:nth-child(5) {
+                left: 4.26667rem; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage:nth-child(6) {
+                left: 5.33333rem; }
+              .container.withdrawal_activities > .content .task .list .list_content .stepCont .pageCont .stepPage:nth-child(7) {
+                left: 6.4rem; }
+        .container.withdrawal_activities > .content .task .list .list_content .info {
+          position: relative; }
+          .container.withdrawal_activities > .content .task .list .list_content .info > div.list_title {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 0.53333rem; }
+            .container.withdrawal_activities > .content .task .list .list_content .info > div.list_title .font {
+              font-family: "PingFangSC-Semibold";
+              font-size: 0.42667rem;
+              color: #282828;
+              letter-spacing: 0.01333rem;
+              margin: 0 0.13333rem 0 0.4rem; }
+            .container.withdrawal_activities > .content .task .list .list_content .info > div.list_title .red_packet {
+              width: 1.57333rem;
+              height: 0.58667rem;
+              background-image: url("./admin/assets/image_normal_mdz@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.withdrawal_activities > .content .task .list .list_content .info > div.list_title .red_packet {
+                  background-image: url("./admin/assets/image_normal_mdz@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+            .container.withdrawal_activities > .content .task .list .list_content .info > div.list_title .bg_gold {
+              height: 0.58667rem;
+              line-height: 0.58667rem;
+              background-image: url("./admin/assets/image_normal_mrqd@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+              border-radius: 0.02667rem;
+              font-family: "PingFangSC-Semibold";
+              font-size: 0.32rem;
+              color: #D8B73C;
+              letter-spacing: 0.5px;
+              padding-left: 0.58667rem;
+              padding-right: 0.13333rem; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.withdrawal_activities > .content .task .list .list_content .info > div.list_title .bg_gold {
+                  background-image: url("./admin/assets/image_normal_mrqd@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+          .container.withdrawal_activities > .content .task .list .list_content .info > div.list_details {
+            max-width: 5.76rem;
+            font-family: "PingFangSC-Regular";
+            font-size: 0.32rem;
+            color: #8C8C8C;
+            letter-spacing: 0.01333rem;
+            margin: 0.13333rem 0 0.53333rem 0.4rem; }
+          .container.withdrawal_activities > .content .task .list .list_content .info > a.go_withdraw {
+            position: absolute;
+            display: block;
+            width: 2.34667rem;
+            height: 0.93333rem;
+            line-height: 0.93333rem;
+            right: 0.4rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            background: #F92C56;
+            border: 1px solid transparent;
+            border-radius: 0.48rem;
+            font-family: "PingFangSC-Semibold";
+            font-size: 0.37333rem;
+            color: #EDF2F4;
+            letter-spacing: 0.58px;
+            text-align: center; }
+            .container.withdrawal_activities > .content .task .list .list_content .info > a.go_withdraw.done {
+              border: 1px solid #F92C56;
+              color: #F92C56;
+              background: white; }
+    .container.withdrawal_activities > .content > footer {
+      font-family: "PingFangSC-Regular";
+      font-size: 0.32rem;
+      color: #8C8C8C;
+      letter-spacing: 0.5px;
+      text-align: center;
+      margin-top: 0.26667rem;
+      margin-bottom: 0.53333rem; }
+      .container.withdrawal_activities > .content > footer span {
+        color: #F92C56;
+        margin-left: 0.13333rem; }
+  .container.withdrawal_activities .alert_sign {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .container.withdrawal_activities .alert_sign .sign {
+      position: relative;
+      width: 8.77333rem;
+      height: 12rem;
+      background-image: url("./admin/assets/act_image_ttqd@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 0.90667rem;
+      margin-top: 5.33333rem;
+      overflow: hidden; }
+      @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .container.withdrawal_activities .alert_sign .sign {
+          background-image: url("./admin/assets/act_image_ttqd@3x.png");
+          background-repeat: no-repeat;
+          background-size: cover; } }
+      .container.withdrawal_activities .alert_sign .sign .sign_content {
+        width: 7.76rem;
+        height: 6.58667rem;
+        margin-top: 3.38667rem;
+        margin-left: 0.22667rem;
+        position: relative;
+        background-image: url("./admin/assets/act_image_lxqd@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+        @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+          .container.withdrawal_activities .alert_sign .sign .sign_content {
+            background-image: url("./admin/assets/act_image_lxqd@3x.png");
+            background-repeat: no-repeat;
+            background-size: cover; } }
+        .container.withdrawal_activities .alert_sign .sign .sign_content > .statistics,
+        .container.withdrawal_activities .alert_sign .sign .sign_content > .title {
+          font-family: "PingFangSC-Regular";
+          font-size: 0.34667rem;
+          color: #A4630B;
+          letter-spacing: 0.5px;
+          text-align: center;
+          line-height: 0.64rem; }
+        .container.withdrawal_activities .alert_sign .sign .sign_content > .title {
+          font-size: 0.48rem;
+          color: #C55604;
+          letter-spacing: 1px;
+          margin-top: 0.26667rem; }
+        .container.withdrawal_activities .alert_sign .sign .sign_content .footer_dot {
+          position: absolute;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          bottom: 0.70667rem;
+          left: 0.77333rem; }
+.layui-carousel>*[carousel-item]:before{
+  content: '';
+}
+          .container.withdrawal_activities .alert_sign .sign .sign_content .footer_dot div {
+            width: 1.92rem;
+            height: 0.21333rem;
+            position: relative; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .footer_dot div::after {
+              content: '';
+              display: block;
+              position: absolute;
+              width: 0.10667rem;
+              height: 0.10667rem;
+              background-color: white;
+              border-radius: 0.05333rem;
+              top: 0;
+              left: 0;
+              z-index: 2; }
+        .container.withdrawal_activities .alert_sign .sign .sign_content .footer_bg {
+          position: absolute;
+          max-width: 7.14667rem;
+          height: 0.21333rem;
+          bottom: 0.72rem;
+          right: 0.37333rem;
+          background-color: #ff681a;
+          border-radius: 0.10667rem; }
+        .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 6.50667rem;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-left: 0.56rem;
+          margin-top: 0.58667rem; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold > div {
+            width: 0.64rem;
+            height: 0.64rem;
+            font-family: "PingFangSC-Regular";
+            font-size: 0.24rem;
+            color: #8C8C8C;
+            letter-spacing: 0.45px; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold > div::before {
+              content: '';
+              width: 0.64rem;
+              height: 0.64rem;
+              display: block;
+              background-image: url("./admin/assets/act_image_jbjl@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold > div::before {
+                  background-image: url("./admin/assets/act_image_jbjl@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold > div.active {
+              position: relative; }
+              .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold > div.active::after {
+                content: '';
+                position: absolute;
+                width: 1.41333rem;
+                height: 0.48rem;
+                display: block;
+                top: -0.48rem;
+                left: -0.34667rem;
+                background-image: url("./admin/assets/act_image_mtlq@2x.png");
+                background-repeat: no-repeat;
+                background-size: contain; }
+                @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                  .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold > div.active::after {
+                    background-image: url("./admin/assets/act_image_mtlq@3x.png");
+                    background-repeat: no-repeat;
+                    background-size: contain; } }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_gold > div.main {
+              color: #FDC72F; }
+        .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow {
+          width: 6.96rem;
+          height: 2.08rem;
+          margin: 0.56rem auto 0;
+          border: 0.21333rem solid #ffedd0;
+          border-left: none;
+          border-radius: 0.16rem;
+          position: relative; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .vertical_bg {
+            position: absolute;
+            width: 0.21333rem;
+            background-color: #ff681a;
+            right: -0.18667rem;
+            top: -0.16rem;
+            border-radius: 0.21333rem; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .sign_day {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .sign_day .sign_bg {
+              position: absolute;
+              max-width: 7.14667rem;
+              height: 0.21333rem;
+              top: -0.21333rem;
+              left: 0;
+              background-color: #ff681a;
+              border-radius: 0.10667rem; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .sign_day .top_dot {
+              width: 7.14667rem;
+              position: absolute;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between;
+              top: -0.17333rem;
+              left: 0; }
+              .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .sign_day .top_dot div {
+                width: 1.22667rem;
+                height: 0.21333rem;
+                position: relative; }
+                .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .sign_day .top_dot div::after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  width: 0.10667rem;
+                  height: 0.10667rem;
+                  background-color: white;
+                  border-radius: 0.05333rem;
+                  top: 0;
+                  left: 50%;
+                  -webkit-transform: translateX(-50%);
+                          transform: translateX(-50%);
+                  z-index: 2; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .sign_day > div {
+              position: relative;
+              width: 1.22667rem;
+              font-family: "PingFangSC-Regular";
+              font-size: 0.24rem;
+              color: #8C8C8C;
+              letter-spacing: 0.45px;
+              text-align: center; }
+              .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .sign_day > div.active {
+                color: #FDC72F;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-top: 0.18667rem;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            font-family: "PingFangSC-Regular";
+            font-size: 0.24rem;
+            color: #8C8C8C;
+            letter-spacing: 0.45px;
+            text-align: center; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div {
+              background-image: url("./admin/assets/act_image_xlb@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div {
+                  background-image: url("./admin/assets/act_image_xlb@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+              .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div.active {
+                position: relative; }
+                .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div.active::after {
+                  content: '';
+                  position: absolute;
+                  width: 1.41333rem;
+                  height: 0.48rem;
+                  display: block;
+                  top: -0.48rem;
+                  left: -0.34667rem;
+                  background-image: url("./admin/assets/act_image_mtlq@2x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                    .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div.active::after {
+                      background-image: url("./admin/assets/act_image_mtlq@3x.png");
+                      background-repeat: no-repeat;
+                      background-size: contain; } }
+              .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div.main {
+                color: #FDC72F; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div:first-child {
+              width: 1.12rem;
+              height: 1.12rem;
+              line-height: 2.32rem; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div:nth-child(2) {
+              width: 0.8rem;
+              height: 0.8rem;
+              margin: 0 1.06667rem 0 0.96rem;
+              line-height: 1.68rem; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div:nth-child(3) {
+              width: 0.8rem;
+              height: 0.8rem;
+              margin-right: 1.06667rem;
+              line-height: 1.68rem; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_flow .gift > div:nth-child(4) {
+              width: 0.8rem;
+              height: 0.8rem;
+              line-height: 1.68rem; }
+        .container.withdrawal_activities .alert_sign .sign .sign_content .sign_week {
+          width: 6.96rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse;
+          margin: auto; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_week > div {
+            font-family: "PingFangSC-Regular";
+            font-size: 0.24rem;
+            color: #8C8C8C;
+            letter-spacing: 0.45px;
+            margin-top: 0.05333rem;
+            white-space: nowrap; }
+            .container.withdrawal_activities .alert_sign .sign .sign_content .sign_week > div.active {
+              color: #FDC72F;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_week > div:nth-child(1) {
+            padding-left: 1.28rem;
+            padding-right: 0.48rem; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_week > div:nth-child(2) {
+            padding-left: 1.12rem; }
+          .container.withdrawal_activities .alert_sign .sign .sign_content .sign_week > div:nth-child(3) {
+            padding-left: 1.28rem; }
+      .container.withdrawal_activities .alert_sign .sign .btn {
+        width: 6.37333rem;
+        height: 1.22667rem;
+        margin-left: 0.82667rem;
+        margin-top: 0.37333rem;
+        background-image: url("./admin/assets/act_image_dktx@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+        @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+          .container.withdrawal_activities .alert_sign .sign .btn {
+            background-image: url("./admin/assets/act_image_dktx@3x.png");
+            background-repeat: no-repeat;
+            background-size: cover; } }
+    .container.withdrawal_activities .alert_sign .close {
+      position: absolute;
+      top: 4.18667rem;
+      left: 0.90667rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-image: url("./admin/assets/act_icon_close@2x.png");
+      background-repeat: no-repeat;
+      background-size: contain; }
+      @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .container.withdrawal_activities .alert_sign .close {
+          background-image: url("./admin/assets/act_icon_close@3x.png");
+          background-repeat: no-repeat;
+          background-size: contain; } }
+  .container.Invite_friends {
+    background-color: #F3F3F3;
+    overflow: hidden; }
+    .container.Invite_friends .notice {
+      position: relative;
+      width: 10rem;
+      height: 0.85333rem;
+      line-height: 0.85333rem;
+      background-color: rgba(222, 55, 77, 0.8);
+      font-family: "PingFangSC-Regular";
+      font-size: 0.29333rem;
+      color: #EDF2F4;
+      letter-spacing: 1px;
+      padding-left: 2.08rem; }
+      .container.Invite_friends .notice::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0.42667rem;
+        height: 0.42667rem;
+        background-image: url("./admin/assets/act_icon_lb2@2x.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 1.52rem; }
+        @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+          .container.Invite_friends .notice::before {
+            background-image: url("./admin/assets/act_icon_lb2@3x.png");
+            background-repeat: no-repeat;
+            background-size: contain; } }
+      .container.Invite_friends .notice .yellow {
+        color: #FFE02F; }
+    .container.Invite_friends .bg_wall {
+      width: 10rem;
+      height: 7.97333rem;
+      margin-top: -0.85333rem;
+      overflow: hidden;
+      background-image: url("./admin/assets/act_image_yqhy@2x.png");
+      background-repeat: no-repeat;
+      background-size: contain; }
+      @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .container.Invite_friends .bg_wall {
+          background-image: url("./admin/assets/act_image_yqhy@3x.png");
+          background-repeat: no-repeat;
+          background-size: contain; } }
+      .container.Invite_friends .bg_wall > .btn {
+        width: 6rem;
+        height: 1.22667rem;
+        line-height: 1.22667rem;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF4DE), color-stop(63%, #FFE6A5), color-stop(77%, #FFE5A2), to(#FEE8AD));
+        background-image: linear-gradient(180deg, #FFF4DE 0%, #FFE6A5 63%, #FFE5A2 77%, #FEE8AD 100%);
+        border-radius: 0.61333rem;
+        margin: 4.93333rem auto 0;
+        font-family: "PingFangSC-Semibold";
+        font-size: 0.48rem;
+        color: #DE012C;
+        letter-spacing: 1px;
+        text-align: center; }
+      .container.Invite_friends .bg_wall > .info {
+        font-family: "PingFangSC-Regular";
+        font-size: 0.37333rem;
+        color: #D1D1D1;
+        letter-spacing: 0.5px;
+        margin-top: 0.4rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .container.Invite_friends .bg_wall > .info .copy {
+          width: 1.09333rem;
+          height: 0.58667rem;
+          background-image: url("./admin/assets/image_normal_fz@2x.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-left: 0.26667rem; }
+          @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+            .container.Invite_friends .bg_wall > .info .copy {
+              background-image: url("./admin/assets/image_normal_fz@3x.png");
+              background-repeat: no-repeat;
+              background-size: contain; } }
+    .container.Invite_friends .content {
+      width: 10rem;
+      margin-top: 0.26667rem;
+      margin-bottom: 3.33333rem; }
+      .container.Invite_friends .content > .item {
+        margin-top: 0.53333rem; }
+        .container.Invite_friends .content > .item:first-child {
+          margin-top: 0; }
+        .container.Invite_friends .content > .item > .title {
+          position: relative;
+          font-family: "PingFangSC-Semibold";
+          font-size: 0.37333rem;
+          color: #282828;
+          letter-spacing: 0.5px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          padding-left: 0.66667rem; }
+          .container.Invite_friends .content > .item > .title::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 0.08rem;
+            height: 0.32rem;
+            background: #F92C56;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            left: 0.4rem; }
+        .container.Invite_friends .content > .item > .main.no-friends {
+          display: none;
+          margin-top: 0.77333rem; }
+          .container.Invite_friends .content > .item > .main.no-friends div {
+            font-family: "PingFangSC-Regular";
+            font-size: 0.42667rem;
+            color: #D1D1D1;
+            letter-spacing: 0.5px;
+            text-align: center; }
+        .container.Invite_friends .content > .item > .main.yes-friends {
+          margin-top: 0.4rem; }
+          .container.Invite_friends .content > .item > .main.yes-friends .font {
+            font-family: "PingFangSC-Regular";
+            font-size: 0.32rem;
+            color: #282828;
+            letter-spacing: 0.5px;
+            text-align: center;
+            max-width: 7.28rem;
+            margin: auto; }
+            .container.Invite_friends .content > .item > .main.yes-friends .font .red {
+              font-family: "PingFangSC-Semibold";
+              color: #F92C56;
+              font-size: 0.42667rem; }
+          .container.Invite_friends .content > .item > .main.yes-friends .head_portrait {
+            max-width: 7.28rem;
+            margin: 0.26667rem auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            .container.Invite_friends .content > .item > .main.yes-friends .head_portrait .item {
+              width: 1.01333rem;
+              height: 1.01333rem;
+              margin-top: 0.13333rem;
+              padding: 0 0.13333rem;
+              background-image: url("./admin/assets/profile@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.Invite_friends .content > .item > .main.yes-friends .head_portrait .item {
+                  background-image: url("./admin/assets/profile@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+          .container.Invite_friends .content > .item > .main.yes-friends .go_watch {
+            width: 2.34667rem;
+            height: 0.93333rem;
+            margin: auto;
+            background-image: url("./admin/assets/image_normal_qkk@2x.png");
+            background-repeat: no-repeat;
+            background-size: contain; }
+            @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+              .container.Invite_friends .content > .item > .main.yes-friends .go_watch {
+                background-image: url("./admin/assets/image_normal_qkk@3x.png");
+                background-repeat: no-repeat;
+                background-size: contain; } }
+        .container.Invite_friends .content > .item .img_list {
+          width: 9.14667rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin: 0.4rem auto 0; }
+          .container.Invite_friends .content > .item .img_list > .info_img {
+            width: 2.90667rem;
+            height: 3.04rem; }
+            .container.Invite_friends .content > .item .img_list > .info_img:nth-child(1) {
+              background-image: url("./admin/assets/act_image_hyksp@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.Invite_friends .content > .item .img_list > .info_img:nth-child(1) {
+                  background-image: url("./admin/assets/act_image_hyksp@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+            .container.Invite_friends .content > .item .img_list > .info_img:nth-child(2) {
+              background-image: url("./admin/assets/act_image_nnjb@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.Invite_friends .content > .item .img_list > .info_img:nth-child(2) {
+                  background-image: url("./admin/assets/act_image_nnjb@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+            .container.Invite_friends .content > .item .img_list > .info_img:nth-child(3) {
+              background-image: url("./admin/assets/act_image_scyq@2x.png");
+              background-repeat: no-repeat;
+              background-size: contain; }
+              @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+                .container.Invite_friends .content > .item .img_list > .info_img:nth-child(3) {
+                  background-image: url("./admin/assets/act_image_scyq@3x.png");
+                  background-repeat: no-repeat;
+                  background-size: contain; } }
+        .container.Invite_friends .content > .item .info_list {
+          width: 9.14667rem;
+          margin: 0.4rem auto 0; }
+          .container.Invite_friends .content > .item .info_list > .item {
+            margin-top: 0.53333rem;
+            font-family: "PingFangSC-Regular";
+            font-size: 0.37333rem;
+            color: #282828;
+            letter-spacing: 0.5px; }
+            .container.Invite_friends .content > .item .info_list > .item:first-child {
+              margin-top: 0; }
+      .container.Invite_friends .content .warn_info {
+        text-align: center;
+        font-family: "PingFangSC-Regular";
+        font-size: 0.32rem;
+        color: #8C8C8C;
+        letter-spacing: 0.5px;
+        margin: 0.53333rem 0; }
+        .container.Invite_friends .content .warn_info .red {
+          color: #F92C56; }
+    .container.Invite_friends > footer {
+      position: fixed;
+      bottom: 0;
+      width: 10rem;
+      height: 2.8rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: white;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .container.Invite_friends > footer div {
+        width: 1.33333rem;
+        height: 1.33333rem;
+        font-family: "PingFangSC-Regular";
+        font-size: 0.32rem;
+        color: #282828;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-top: 0.44rem; }
+        .container.Invite_friends > footer div.WeChat::before, .container.Invite_friends > footer div.Code::before, .container.Invite_friends > footer div.QQ::before {
+          width: 1.33333rem;
+          height: 1.33333rem;
+          content: '';
+          display: block;
+          margin-bottom: 0.13333rem; }
+        .container.Invite_friends > footer div.WeChat::before {
+          background-image: url("./admin/assets/icon_wx@2x.png");
+          background-repeat: no-repeat;
+          background-size: contain; }
+          @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+            .container.Invite_friends > footer div.WeChat::before {
+              background-image: url("./admin/assets/icon_wx@3x.png");
+              background-repeat: no-repeat;
+              background-size: contain; } }
+        .container.Invite_friends > footer div.Code::before {
+          background-image: url("./admin/assets/icon_ewm@2x.png");
+          background-repeat: no-repeat;
+          background-size: contain; }
+          @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+            .container.Invite_friends > footer div.Code::before {
+              background-image: url("./admin/assets/icon_ewm@3x.png");
+              background-repeat: no-repeat;
+              background-size: contain; } }
+        .container.Invite_friends > footer div.QQ::before {
+          background-image: url("./admin/assets/icon_qq@2x.png");
+          background-repeat: no-repeat;
+          background-size: contain; }
+          @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+            .container.Invite_friends > footer div.QQ::before {
+              background-image: url("./admin/assets/icon_qq@3x.png");
+              background-repeat: no-repeat;
+              background-size: contain; } }
+  .container.strategy {
+    background-color: #F4F8FB; }
+    .container.strategy > .content {
+      width: 10rem; }
+      .container.strategy > .content .list {
+        background-color: white;
+        margin-bottom: 0.26667rem; }
+        .container.strategy > .content .list:first-child {
+          border-top: 1px solid #F0F0F0; }
+        .container.strategy > .content .list:last-child {
+          margin-bottom: 0; }
+        .container.strategy > .content .list .title {
+          font-family: "PingFangSC-Semibold";
+          font-size: 0.48rem;
+          color: #282828;
+          letter-spacing: 0;
+          padding-left: 0.32rem;
+          padding-top: 0.24rem; }
+        .container.strategy > .content .list ul li {
+          position: relative;
+          font-family: "PingFangSC-Regular";
+          font-size: 0.42667rem;
+          color: #8C8C8C;
+          letter-spacing: 0;
+          height: 1.38667rem;
+          line-height: 1.38667rem;
+          padding-left: 0.32rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          border-top: 1px solid #F0F0F0; }
+          .container.strategy > .content .list ul li:first-child {
+            border-top: none; }
+          .container.strategy > .content .list ul li::before {
+            display: inline-block;
+            content: '';
+            width: 0.10667rem;
+            height: 0.10667rem;
+            border-radius: 0.05333rem;
+            background-color: #EAEAEA;
+            margin-right: 0.58667rem; }
+          .container.strategy > .content .list ul li::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0.18667rem;
+            height: 0.32rem;
+            background-image: url("./admin/assets/icon_default_xjsy@2x.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: 0.32rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+            @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+              .container.strategy > .content .list ul li::after {
+                background-image: url("./admin/assets/icon_default_xjsy@3x.png");
+                background-repeat: no-repeat;
+                background-size: contain; } }
+  .container.activety_set .content .list-item {
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+    width: 9.2rem;
+    height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto; }
+    .container.activety_set .content .list-item .layui-form-switch {
+      width: 0.82667rem;
+      min-width: 0.82667rem;
+      height: 0.37333rem;
+      line-height: 0.37333rem;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      right: 0.32rem;
+      margin-top: 0;
+      background-color: #F1F1F1;
+      border: none;
+      padding: 0; }
+      .container.activety_set .content .list-item .layui-form-switch i {
+        width: 0.82667rem;
+        height: 0.82667rem;
+        top: -0.16rem;
+        left: -0.32rem;
+        background-color: transparent;
+        background-image: url("./admin/assets/set_button_close@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+        @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+          .container.activety_set .content .list-item .layui-form-switch i {
+            background-image: url("./admin/assets/set_button_close@3x.png");
+            background-repeat: no-repeat;
+            background-size: cover; } }
+      .container.activety_set .content .list-item .layui-form-switch.layui-form-onswitch {
+        background-color: #B3EDCF; }
+        .container.activety_set .content .list-item .layui-form-switch.layui-form-onswitch i {
+          left: 0.90667rem;
+          background-image: url("./admin/assets/set_button_ok@2x.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
+          @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+            .container.activety_set .content .list-item .layui-form-switch.layui-form-onswitch i {
+              background-image: url("./admin/assets/set_button_ok@3x.png");
+              background-repeat: no-repeat;
+              background-size: cover; } }
+    .container.activety_set .content .list-item .title {
+      font-family: "PingFangSC-Semibold";
+      font-size: 0.37333rem;
+      color: #282828;
+      letter-spacing: 0; }
+    .container.activety_set .content .list-item .info {
+      font-family: "PingFangSC-Regular";
+      font-size: 0.32rem;
+      color: #8C8C8C;
+      letter-spacing: 0;
+      margin-top: 0.05333rem; }
+  .container.earnings {
+    background-color: #F4F8FB; }
+    .container.earnings .panel {
+      width: 10rem;
+      background-color: white;
+      border-top: 1px solid #EAEAEA; }
+      .container.earnings .panel .title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 0.53333rem; }
+        .container.earnings .panel .title .gold {
+          margin-right: 1.68rem; }
+        .container.earnings .panel .title > div {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          text-align: center; }
+          .container.earnings .panel .title > div .font {
+            font-family: "PingFangSC-Regular";
+            font-size: 0.37333rem;
+            color: #8C8C8C;
+            letter-spacing: 0.5px; }
+          .container.earnings .panel .title > div .price {
+            font-family: "PingFangSC-Semibold";
+            font-size: 0.8rem;
+            color: #F92C56;
+            letter-spacing: 0.5px; }
+            .container.earnings .panel .title > div .price span {
+              font-size: 0.32rem; }
+          .container.earnings .panel .title > div .proportion {
+            font-family: "PingFangSC-Regular";
+            font-size: 0.32rem;
+            color: #8C8C8C;
+            letter-spacing: 0;
+            margin-top: 0.34667rem; }
+          .container.earnings .panel .title > div .go_withdrawal {
+            text-align: center;
+            width: 2.13333rem;
+            height: 0.74667rem;
+            line-height: 0.74667rem;
+            border: 1px solid #F92C56;
+            border-radius: 0.05333rem;
+            font-family: "PingFangSC-Regular";
+            font-size: 0.37333rem;
+            color: #F92C56;
+            margin-top: 0.34667rem; }
+      .container.earnings .panel .datail {
+        width: 9.2rem;
+        height: 0.98667rem;
+        line-height: 0.98667rem;
+        border-top: 1px solid #EAEAEA;
+        margin: 0.61333rem auto 0;
+        font-family: "PingFangSC-Regular";
+        font-size: 0.32rem;
+        color: #8C8C8C;
+        letter-spacing: 0;
+        text-align: center; }
+    .container.earnings .content {
+      margin-top: 0.26667rem;
+      background-color: white; }
+      .container.earnings .content .layui-tab-title {
+        height: 1.2rem;
+        line-height: 1.2rem;
+        padding-top: 0.10667rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .container.earnings .content .layui-tab-title li {
+          font-family: "PingFangSC-Regular";
+          font-size: 0.37333rem;
+          color: #8C8C8C;
+          letter-spacing: 0;
+          min-width: 3.2rem;
+          height: 1.2rem; }
+.layui-carousel>*[carousel-item] > *{
+  background-color: transparent;
+  white-space: nowrap;
+  color: #EDF2F4;
+}
+
+        .container.earnings .content .layui-tab-title .layui-this {
+          font-family: "PingFangSC-Semibold";
+          color: #282828; }
+          .container.earnings .content .layui-tab-title .layui-this::after {
+            border-bottom: 2px solid #F92C56;
+            height: 1.2rem; }
+      .container.earnings .content .layui-tab-content {
+        padding: 0; }
+        .container.earnings .content .layui-tab-content .list-item {
+          height: 1.89333rem;
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          border-bottom: 1px solid #EAEAEA;
+          padding-left: 0.53333rem; }
+          .container.earnings .content .layui-tab-content .list-item .title {
+            font-family: "PingFangSC-Regular";
+            font-size: 0.37333rem;
+            color: #282828;
+            letter-spacing: 0; }
+          .container.earnings .content .layui-tab-content .list-item .detail {
+            font-family: "PingFangSC-Regular";
+            font-size: 0.32rem;
+            color: #8C8C8C;
+            letter-spacing: 0;
+            margin-top: 0.08rem; }
+          .container.earnings .content .layui-tab-content .list-item .count {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            right: 0.53333rem;
+            font-family: "PingFangSC-Semibold";
+            font-size: 0.37333rem;
+            color: #F92C56;
+            letter-spacing: 0; }
+    .container.earnings footer {
+      width: 10rem;
+      height: 2.64rem;
+      position: fixed;
+      bottom: 0;
+      border-top: 1px solid #EAEAEA; }
+      .container.earnings footer .info {
+        font-family: "PingFangSC-Regular";
+        font-size: 0.32rem;
+        color: #8C8C8C;
+        letter-spacing: 0.38px;
+        text-align: center;
+        margin-top: 0.37333rem; }
+        .container.earnings footer .info span {
+          color: #F92C56; }
+      .container.earnings footer .btn {
+        width: 8.93333rem;
+        height: 1.17333rem;
+        line-height: 1.17333rem;
+        text-align: center;
+        background: #F92C56;
+        border-radius: 0.58667rem;
+        font-family: "PingFangSC-Semibold";
+        font-size: 0.42667rem;
+        color: #EDF2F4;
+        letter-spacing: 0.5px;
+        margin: 0.26667rem auto; }
+
+body .gold-info .layui-layer-title {
+  background: #fff;
+  line-height: normal;
+  height: auto;
+  border: none;
+  padding: 0.8rem 0 0.56rem;
+  text-align: center;
+  font-family: "PingFangSC-Semibold";
+  font-size: 0.42667rem;
+  color: #282828;
+  letter-spacing: 0.5px; }
+
+body .gold-info .layui-layer-content {
+  width: 5.6rem;
+  margin: auto;
+  font-family: "PingFangSC-Regular";
+  font-size: 0.37333rem;
+  color: #58565C;
+  letter-spacing: 0; }
+  body .gold-info .layui-layer-content p {
+    margin-bottom: 0.26667rem; }
+
+body .gold-info .layui-layer-btn {
+  height: 2.16rem;
+  padding: 0; }
+
+body .gold-info .layui-layer-btn0 {
+  position: relative;
+  width: 6.08rem;
+  height: 1.14667rem;
+  line-height: 1.14667rem;
+  text-align: center;
+  background: #F92C56;
+  border-radius: 0.57333rem;
+  font-family: "PingFangSC-Semibold";
+  font-size: 0.42667rem;
+  color: #EDF2F4;
+  letter-spacing: 0.5px;
+  padding: 0;
+  border: 1px solid #F92C56;
+  display: block;
+  margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+/*# sourceMappingURL=withdrawal_activities.css.map */

@@ -1,0 +1,31 @@
+$publicSrc    : './../img/';
+$pingfang-path:'./../font/PingFang/PingFangSC-';
+
+@function px-rem($fontSize, $windowFontSize:37.5) {
+  @return ($fontSize/$windowFontSize)*1rem;
+}
+
+@mixin bg-image($url, $bgSize:contain) {
+  background-image : url($publicSrc+$url+"@2x.png");
+  background-size  : $bgSize;
+  background-repeat: no-repeat;
+
+  // @media (-webkit-min-device-pix-ratio: 3),
+  // (min-device-pix-ratio) {
+  //   background-image : url($publicSrc+$url+"@3x.png");
+  //   background-size  : $bgSize;
+  //   background-repeat: no-repeat;
+  // }
+}
+
+@mixin fontFamily($name) {
+  @font-face {
+    font-family: $name;
+    src        : url($pingfang-path+$name+'.ttf');
+    src        :
+      url($pingfang-path+$name+'.eot?#font-spider') format('embedded-opentype'),
+      url($pingfang-path+$name+'.woff') format('woff'),
+      url($pingfang-path+$name+'.ttf') format('truetype'),
+      url($pingfang-path+$name+'.svg') format('svg');
+  }
+}

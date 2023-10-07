@@ -1,0 +1,554 @@
+@import 'auto';
+$Regular :'Regular';
+$Semibold:'Semibold';
+$active  :0 !default;
+
+@include fontFamily($Regular);
+@include fontFamily($Semibold);
+
+body,
+p {
+  padding    : 0;
+  margin     : 0;
+  border     : none;
+  font-family: $Regular;
+}
+
+.container {
+  background-image: linear-gradient(-89deg, #691FAA 0%, #7B25B7 49%, #6A1FAD 100%);
+
+  .bg_wall {
+    width : px-rem(375);
+    height: px-rem(445);
+    margin: auto;
+    @include bg-image('image_act_stars_back');
+
+    .weekStar {
+      width : px-rem(375);
+      height: px-rem(445);
+      @include bg-image('image_act_stars_weekly');
+    }
+  }
+
+  .last_week {
+    width   : px-rem(349);
+    height  : px-rem(543);
+    margin  : px-rem(-60) auto px-rem(40);
+    overflow: hidden;
+    @include bg-image('image_act_stars_last');
+
+    .notice {
+      position     : relative;
+      width        : px-rem(294);
+      height       : px-rem(30);
+      background   : #8A16AD;
+      border       : 1px solid #C03CE9;
+      margin       : px-rem(52) auto 0;
+      border-radius: px-rem(15);
+
+      .swiper-container-last {
+        overflow   : hidden;
+        width      : px-rem(250);
+        margin-left: px-rem(22);
+      }
+
+      .user {
+        height         : px-rem(30);
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        .icon {
+          width           : px-rem(22);
+          height          : px-rem(22);
+          background-color: aliceblue;
+          margin-right    : px-rem(10);
+        }
+
+        .name {
+          color         : #f8f8f8;
+          line-height   : px-rem(22);
+          font-family   : $Regular;
+          font-size     : px-rem(12);
+          color         : #F8F8F8;
+          letter-spacing: 0;
+        }
+      }
+
+      .left {
+        position: absolute;
+        width   : px-rem(32);
+        height  : px-rem(35);
+        top     : px-rem(1);
+        left    : px-rem(-15);
+        @include bg-image('icon_act_stars_left');
+
+        &.swiper-button-disabled {
+          opacity       : .35;
+          cursor        : auto;
+          pointer-events: none;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .right {
+        @extend .left;
+        left : auto;
+        right: px-rem(-15);
+        @include bg-image('icon_act_stars_right');
+      }
+    }
+
+    .week_anchor {
+      &>.title {
+        width : px-rem(161);
+        height: px-rem(30);
+        margin: px-rem(15) auto;
+        @include bg-image('icon_act_stars_anchor');
+      }
+
+      &>.ranking {
+        width          : px-rem(106*2+120);
+        min-height     : px-rem(164);
+        display        : flex;
+        justify-content: center;
+        margin         : auto;
+
+        &>.no_data {
+          display    : none;
+          line-height: px-rem(164);
+          color      : #f8f8f8;
+          font-size  : px-rem(14);
+          font-family: $Regular;
+
+          &.active {
+            display: block;
+          }
+        }
+
+        &>div {
+          position: relative;
+          width   : px-rem(106);
+          height  : px-rem(164);
+          @include bg-image('image_act_stars_ranking');
+
+          &:nth-child(2) {
+            margin: 0 px-rem(5);
+          }
+
+          &>.title {
+            text-align    : center;
+            font-family   : $Semibold;
+            font-size     : px-rem(19);
+            color         : #F8F8F8;
+            letter-spacing: 0;
+            margin-top    : px-rem(19);
+          }
+
+          &>.frist_icon,
+          &>.second_icon,
+          &>.third_icon {
+            width           : px-rem(56);
+            height          : px-rem(56);
+            background-color: aliceblue;
+            border-radius   : px-rem(56/2);
+            margin          : px-rem(8) auto px-rem(7);
+          }
+
+          &>.name {
+            max-width     : px-rem(60);
+            overflow      : hidden;
+            text-overflow : ellipsis;
+            white-space   : nowrap;
+            margin        : auto;
+            text-align    : center;
+            font-family   : $Regular;
+            font-size     : px-rem(14);
+            color         : #F8F8F8;
+            letter-spacing: 0;
+          }
+
+          &>.receive {
+            text-align    : center;
+            font-family   : $Regular;
+            opacity       : 0.3;
+            font-size     : px-rem(11);
+            color         : #F8F8F8;
+            letter-spacing: 0;
+          }
+        }
+
+        &>div:first-child {
+          &::before {
+            content  : '';
+            display  : block;
+            position : absolute;
+            width    : px-rem(38);
+            height   : px-rem(34);
+            transform: translateY(-50%);
+            left     : px-rem(-9);
+            @include bg-image('icon_act_stars_crown');
+          }
+        }
+      }
+    }
+
+    .week_rich {
+      @extend .week_anchor;
+
+      &>.title {
+        @include bg-image('icon_act_stars_rich');
+      }
+    }
+  }
+
+  .this_week {
+    position: relative;
+    width   : px-rem(336);
+    height  : px-rem(145);
+    margin  : 0 auto px-rem(40);
+    @include bg-image('image_act_stars_this');
+
+    .swiper-container {
+      position : absolute;
+      width    : px-rem(230);
+      height   : px-rem(88);
+      margin   : 0 auto;
+      left     : 50%;
+      bottom   : px-rem(7);
+      transform: translateX(-50%);
+
+      .swiper-wrapper {
+        .swiper-slide {
+          display        : flex;
+          justify-content: flex-end;
+          align-items    : center;
+          flex-direction : column;
+
+          img {
+            width        : px-rem(50);
+            height       : px-rem(50);
+            border-radius: px-rem(6);
+            border       : px-rem(1) solid #C569FC;
+          }
+
+          p {
+            font-size     : px-rem(14);
+            color         : #FFFFFF;
+            letter-spacing: 0;
+            margin-top    : px-rem(8);
+            opacity       : 0.6;
+          }
+
+          &.swiper-slide-active {
+            img {
+              transform: scale(1.2);
+              border   : px-rem(1) solid #FFEBAB;
+            }
+
+            p {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-button-prev {
+      width : px-rem(37);
+      height: px-rem(40);
+      left  : px-rem(-12);
+      bottom: px-rem(39);
+      margin: 0;
+      @include bg-image('icon_act_stars_left_big');
+
+      &:focus {
+        outline: none;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+
+    .swiper-button-next {
+      @extend .swiper-button-prev;
+      left : unset;
+      right: px-rem(-12);
+      @include bg-image('icon_act_stars_right_big');
+    }
+  }
+
+  .week_star {
+    width         : px-rem(349);
+    height        : px-rem(552);
+    padding-bottom: px-rem(16);
+    margin        : auto;
+    overflow      : hidden;
+    @include bg-image('image_act_stars_competition');
+
+    .header {
+      width          : 100%;
+      height         : px-rem(42);
+      display        : flex;
+      align-items    : flex-end;
+      justify-content: space-between;
+      margin-top     : px-rem(52);
+      position       : relative;
+
+      &::after {
+        content      : '';
+        position     : absolute;
+        display      : block;
+        width        : px-rem(331);
+        height       : px-rem(30);
+        background   : #8E00AE;
+        border       : px-rem(1) solid #CA4EFD;
+        border-radius: px-rem(6);
+        bottom       : 0;
+        left         : px-rem(9);
+      }
+
+      &>div {
+        width  : px-rem(96);
+        height : px-rem(42);
+        z-index: 1;
+
+        &.week_anchor {
+          @include bg-image('icon_act_stars_anchor_normal');
+
+          &.active {
+            height: px-rem(35);
+            @include bg-image('icon_act_stars_anchor_act');
+          }
+        }
+
+        &.week_rich {
+          @include bg-image('icon_act_stars_rich_normal');
+
+          &.active {
+            height: px-rem(35);
+            @include bg-image('icon_act_stars_anchor_act');
+          }
+        }
+
+        &.active_rule {
+          @include bg-image('icon_act_stars_rule_normal');
+
+          &.active {
+            height: px-rem(35);
+            @include bg-image('icon_act_stars_rule_act');
+          }
+        }
+
+      }
+    }
+
+    .week_anchor_content {
+      width         : 100%;
+      height        : px-rem(435);
+      flex-direction: column;
+      align-items   : center;
+      overflow      : hidden;
+      overflow-y    : auto;
+      margin-top    : px-rem(10);
+      display       : none;
+
+      &.active {
+        display: flex;
+      }
+
+      &>div {
+        width      : px-rem(332);
+        height     : px-rem(78);
+        flex-shrink: 0;
+        @include bg-image('image_act_stars_ranking_top');
+        margin-bottom: px-rem(2);
+        display      : flex;
+        align-items  : center;
+
+        .icon {
+          width      : px-rem(38);
+          height     : px-rem(30);
+          margin-left: px-rem(19);
+        }
+
+        &:first-child {
+          .icon {
+            @include bg-image('icon_act_stars_ranking_top1');
+          }
+        }
+
+        &:nth-child(2) {
+          .icon {
+            @include bg-image('icon_act_stars_ranking_top2');
+          }
+        }
+
+        &:nth-child(3) {
+          .icon {
+            @include bg-image('icon_act_stars_ranking_top3');
+          }
+        }
+
+        .font {
+          width         : px-rem(38);
+          text-align    : center;
+          font-family   : $Semibold;
+          font-size     : px-rem(16);
+          color         : #F8F8F8;
+          letter-spacing: 0;
+          margin-left   : px-rem(19);
+        }
+
+        .via {
+          width           : px-rem(44);
+          height          : px-rem(44);
+          border-radius   : px-rem(22);
+          background-color: #D8D8D8;
+          margin-left     : px-rem(12);
+          margin-right    : px-rem(7);
+        }
+
+        .explain {
+          max-width: px-rem(160);
+
+          p {
+            font-family   : $Regular;
+            font-size     : px-rem(16);
+            color         : #F8F8F8;
+            letter-spacing: 0;
+            overflow      : hidden;
+            text-overflow : ellipsis;
+            white-space   : nowrap;
+          }
+
+          .hint {
+            font-size: px-rem(12);
+            opacity  : 0.6;
+          }
+        }
+      }
+    }
+
+    .week_rich_content {
+      @extend .week_anchor_content
+    }
+
+    .active_rule_content {
+      $yellow: #EDBB5C;
+      width  : px-rem(327);
+      margin : auto;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      .font_yellow {
+        color: $yellow;
+      }
+
+      .rule {
+        width          : 100%;
+        height         : px-rem(187);
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        margin-top     : px-rem(15);
+
+        .icon {
+          width : px-rem(161);
+          height: px-rem(44);
+          @include bg-image('icon_act_stars_rule');
+          margin: auto;
+        }
+
+        .content {
+          width        : px-rem(304);
+          height       : px-rem(119);
+          background   : #8A16AD;
+          border       : px-rem(1) solid #CE1EFC;
+          border-radius: px-rem(8);
+          padding-top  : px-rem(12);
+          padding-left : px-rem(21);
+          margin       : 0;
+          overflow     : hidden;
+          overflow-y   : auto;
+
+          p {
+            max-width     : px-rem(290);
+            font-family   : $Semibold;
+            font-size     : px-rem(12);
+            color         : #F8F8F8;
+            letter-spacing: 0;
+            margin-bottom : px-rem(8);
+          }
+        }
+      }
+
+      .award {
+        width          : 100%;
+        height         : px-rem(230);
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        margin-top     : px-rem(15);
+
+        .icon {
+          width : px-rem(161);
+          height: px-rem(44);
+          @include bg-image('icon_act_stars_reward');
+          margin     : auto;
+          flex-shrink: 0;
+        }
+
+        .content {
+          width        : px-rem(327);
+          height       : px-rem(175);
+          background   : #8A16AD;
+          border       : px-rem(1) solid #CE1EFC;
+          border-radius: px-rem(8);
+          flex-shrink  : 0;
+
+          &>div {
+            height         : px-rem(45);
+            display        : flex;
+            justify-content: space-between;
+            border-top     : 1px solid #CE1EFC;
+
+            div {
+              height         : 100%;
+              display        : flex;
+              align-items    : center;
+              justify-content: center;
+              font-size      : px-rem(12);
+              letter-spacing : 0;
+              font-family    : $Semibold;
+              border-right   : 1px solid #CE1EFC;
+              width          : px-rem(123);
+              text-align     : center;
+
+              &:first-child {
+                width: px-rem(79);
+              }
+
+              &:nth-child(3) {
+                border: none;
+              }
+            }
+          }
+
+          .title {
+            height    : px-rem(37);
+            color     : #F8F8F8;
+            border-top: none;
+          }
+        }
+      }
+    }
+  }
+}

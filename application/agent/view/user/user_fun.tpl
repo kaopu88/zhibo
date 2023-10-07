@@ -1,0 +1,2 @@
+直播：<eq name="vo['live_status']" value="1"><span class="fc_green">开启</span><else/><span class="fc_red">关闭</span></eq> <br/>
+上传：<eq name="vo['film_status']" value="1"><span class="fc_green">开启</span><else/><span class="fc_red">关闭</span></eq>
