@@ -49,12 +49,12 @@ class User extends Controller
         $phoneCode = Request::post('phone_code');
         if (empty($phone)) return json_error(make_error('手机号不能为空'));
         //显示的设置了code就需要验证短信验证码真伪
-        if (isset($code)) {
-            if (empty($code)) return json_error(make_error('短信验证码不能为空'));
-            $smsCodeModel = new SmsCode();
-            $result       = $smsCodeModel->checkCode('reg', $phone, $code, $phoneCode);
-            if (!$result) return json_error($smsCodeModel->getError());
-        }
+        // if (isset($code)) {
+        //     // if (empty($code)) return json_error(make_error('短信验证码不能为空'));
+        //     $smsCodeModel = new SmsCode();
+        //     $result       = $smsCodeModel->checkCode('reg', $phone, $code, $phoneCode);
+        //     if (!$result) return json_error($smsCodeModel->getError());
+        // }
         $user = new UserService();
         $post = Request::post();
         bxkj_console($post);

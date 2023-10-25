@@ -78,9 +78,8 @@ class Zombie extends Controller
         $room_id = $params['room_id'];
 
         $number = $params['count'];
-
         $res = $number > 0 ? ZombieService::addRobot($room_id, $number) : ZombieService::removeRobot($room_id, abs($number));
-
+        // var_dump($res);die;
         if (is_error($res)) return json_error($res);
 
         return json_success([], '添加成功');

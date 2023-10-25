@@ -157,7 +157,7 @@ class Common extends Controller
             if (empty(USERID)) return $this->jsonError('请先登录', 1003);
             $phone2 = DsSession::get('user.phone');
             $phoneCode2 = DsSession::get('user.phone_code');
-            if (empty($phone2)) return $this->jsonError('您还没有绑定手机号');
+            // if (empty($phone2)) return $this->jsonError('您还没有绑定手机号');
             if (isset($phone) && ($phone != $phone2 || $phoneCode != $phoneCode2)) return $this->jsonError('输入的手机号和绑定的手机号不一致');
             $phone = $phone2;
             $phoneCode = $phoneCode2;

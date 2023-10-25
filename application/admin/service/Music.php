@@ -16,10 +16,10 @@ class Music extends Service
         if ($data === false) return $this->setError($this->df->getError());
         $id = Db::name('music')->insertGetId($data);
         if (!$id) return $this->setError('新增失败');
-        if (!empty($data['link'])) {
-            $res = $this->updateFileInfo($id, $data['link']);
-            if (!$res) return false;
-        }
+        // if (!empty($data['link'])) {
+        //     $res = $this->updateFileInfo($id, $data['link']);
+        //     if (!$res) return false;
+        // }
         Service::commit();
         return $id;
     }
@@ -30,10 +30,10 @@ class Music extends Service
         if ($data === false) return $this->setError($this->df->getError());
         $link = Db::name('music')->where(array('id' => $data['id']))->value('link');
         $num = Db::name('music')->where(array('id' => $data['id']))->update($data);
-        if ($link != $data['link']){
-            $res = $this->updateFileInfo($data['id'], $data['link']);
-            if (!$res) return false;
-        }
+        // if ($link != $data['link']){
+        //     $res = $this->updateFileInfo($data['id'], $data['link']);
+        //     if (!$res) return false;
+        // }
         if (!$num) return $this->setError('更新失败');
         return $num;
     }

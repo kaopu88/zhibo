@@ -23,6 +23,40 @@ class Test extends Controller
         
         die;
     }
+    
+    public function flv()
+    {
+        
+        // 本地 FLV 地址
+        $localFlvUrl = input('flv','');
+        if(empty($localFlvUrl))exit('直播链接不存在');
+        // 创建 cURL 句柄
+        $ch = curl_init();
+        
+        // 设置 cURL 选项
+        curl_setopt($ch, CURLOPT_URL, $localFlvUrl);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        
+        // 发起请求并获取响应
+        $response = curl_exec($ch);
+        
+        // 检查请求是否成功
+        if ($response === false) {
+            // 处理请求失败的情况
+            echo 'Error: ' . curl_error($ch);
+        } else {
+            // 设置响应头，将跨域设置为空
+            header('Access-Control-Allow-Origin:');
+        
+            // 输出响应内容
+            echo $response;
+        }
+        
+        // 关闭 cURL 句柄
+        curl_close($ch);
+    }
     public function caipiao()
     {
         $url = "https://lotto.sina.cn/trend/qxc_qlc_proxy.d.html?lottoType=dlt&actionType=chzs&sourceName=bd&type=120";

@@ -689,12 +689,13 @@ class Room extends UserController
         if (!empty($hotList)) $hotList = $Lists->initializeLive($hotList, 1);
         if (config('app.live_setting.is_rest_display')) {
             $offList = $Lists->getLiveHistory();
+            // var_dump($offList);die;
             if (!empty($offList)) $offList = $Lists->initializeUser($offList, 1);
             $res['hotList'] = array_merge($hotList, $offList);
         } else {
             $res['hotList'] = $hotList;
         }
-
+        // var_dump($res);die;
         if ($offset < 1) {
             $res['recommendOne'] = array_slice($res['hotList'] , 0, 4);
             $res['recommendTwo'] = array_slice($res['hotList'] , 4, 2);

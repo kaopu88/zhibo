@@ -45,7 +45,10 @@ class Resources extends Controller
             foreach ($categoryTree as $key => $value) {
                 $arr[] = $value['id'];
             }
-            $where = 'name = "'.$post['name'].'" and cat_id in ('.implode(',', $arr).')';
+            $where = [];
+            if($post['name'])$where['name'] = $post['name'];
+            if(!empty($arr))$where['cat_id'] = ['in',$arr];
+            // $where = 'name = "'.$post['name'].'" and cat_id in ('.implode(',', $arr).')';
             $find = Db::name('resources')->where($where)->find();
             if ($find) {
                 $this->error('资源名称已存在');
@@ -138,7 +141,12 @@ class Resources extends Controller
         foreach ($categoryTree as $key => $value) {
             $arr[] = $value['id'];
         }
-        $where = 'name = "'.$name.'" and cat_id in ('.implode(',', $arr).')';
+        $where = [];
+        // $where = 'name = '.$name.' and cat_id in ('.implode(',', $arr).')';
+        if($name)$where['name'] = $name;
+        if(!empty($arr))$where['cat_id'] = ['in',$arr];
+        
+        // var_dump($where);die;
         $find = Db::name('resources')->where($where)->find();
         if ($find) {
             $this->error('资源名称已存在');

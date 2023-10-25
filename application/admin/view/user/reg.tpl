@@ -27,13 +27,8 @@
                 <td>
                     <div class="base_group">
                         <input style="width: 309px !important;" name="phone" value="" type="text" class="base_text border_left_radius"/>
-                        <a href="javascript:;" class="base_button base_button_gray send_btn border_right_radius">发送验证码</a>
                     </div>
                 </td>
-            </tr>
-            <tr>
-                <td class="field_name">验证码：</td>
-                <td><input name="code" type="text" class="base_text" value=""/></td>
             </tr>
             <tr>
                 <td class="field_name">{:config('app.agent_setting.promoter_name')}：</td>

@@ -23,6 +23,15 @@ class Beauty extends Controller
             $config['beauty_ios_key'] = $config['tuohuan_beauty_ios_key'];
             $config['beauty_android_key'] = $config['tuohuan_beauty_android_key'];
         }
+        if ($config['beauty_status'] == 3) {
+            $config['beauty_ios_key'] = $config['meihu_beauty_ios_key'];
+            $config['beauty_ios_appid'] = $config['meihu_beauty_ios_appid'];
+            $config['beauty_android_key'] = $config['meihu_beauty_android_key'];
+            $config['beauty_android_appid'] = $config['meihu_beauty_android_appid'];
+        }
+        if($config['beauty_status']==3){
+            $tmp = copy_array($config, ['beauty_status', 'beauty_ios_key','beauty_ios_appid', 'beauty_android_key','beauty_android_appid']);
+        }else
         $tmp = copy_array($config, ['beauty_status', 'beauty_ios_key', 'beauty_android_key']);
         return json_success($tmp, '获取成功');
     }

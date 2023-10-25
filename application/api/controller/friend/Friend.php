@@ -160,6 +160,7 @@ class Friend extends UserController
             $condition['is_recommend'] = 1;
             $condition1                = $condition1 . " and  is_recommend =  1";
         }
+        // var_dump($condition1);die;
         $list            = $friendCircelTimelin->getQueryOr($condition, $condition1, '*', 'id desc');
         $mylist          = $friendCircelTimelin->column(['uid' => USERID], 'fcmid');
         $followModel     = new FollowModel();

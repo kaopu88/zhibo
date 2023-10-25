@@ -20,8 +20,8 @@ class Tencent extends LiveDrive
         $secret = $this->genSecret($stream, $time);
 
         $ext = $this->genExt($time);
-        
-        return  "rtmp://wstui.eusmile.cn/live/$stream";
+        return  "rtmp://tui11.dangjunwei.top/live/$stream";
+        // return  "rtmp://wstui.eusmile.cn/live/$stream";
 
         return sprintf('rtmp://%s.%s/live/%s?bizid=%s&txSecret=%s&txTime=%s', $this->stream_prefix, $this->push, $stream, $this->stream_prefix, $secret, $ext);
     }
@@ -66,8 +66,9 @@ class Tencent extends LiveDrive
     //生成 RTMP 直播地址.
     private function RTMPPlayURL($stream)
     {   
-        return sprintf("rtmp://%s/live/%s", 'wsla.eusmile.cn', $stream);
-        return sprintf("rtmp://%s/live/%s", $this->pull, $stream);
+        return sprintf("rtmp://%s/live/%s", 'lala.dangjunwei.top', $stream);
+        // return sprintf("rtmp://%s/live/%s", 'wsla.eusmile.cn', $stream);
+        // return sprintf("rtmp://%s/live/%s", $this->pull, $stream);
 //        return sprintf("rtmp://%s.%s/live/%s", $this->stream_prefix, $this->pull, $stream);
     }
 

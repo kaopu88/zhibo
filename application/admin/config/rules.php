@@ -87,8 +87,8 @@ $rules['update@article'] = array(
 $rules['common@robot'] = array(
     'alias' => '',
     'validate' => array(
-        array('nickname', 'regex', 'require', '昵称不能为空'),
-        array('avatar', 'regex', 'require', '头像不能为空')
+        // array('nickname', 'regex', 'require', '昵称不能为空'),
+        // array('avatar', 'regex', 'require', '头像不能为空')
     ),
     'fill' => array(
         array('birthday', 'strtotime', '', DataFactory::NOT_EMPTY),
@@ -448,7 +448,7 @@ $rules['common@music'] = array(
     'alias' => '',
     'validate' => array(
         array('link', 'regex', 'require', '音乐链接不能为空'),
-        array('lrc_link', 'regex', 'require', '歌词链接不能为空'),
+        // array('lrc_link', 'regex', 'require', '歌词链接不能为空'),
         array('title', 'regex', 'require', '音乐标题不能为空'),
         array('image', 'regex', 'require', '缩略图不能为空'),
         array('singer_id', 'regex', 'require', '所属歌手不能为空'),
@@ -630,7 +630,7 @@ $rules['common@resources'] = array(
     'validate' => array(
         array('title', 'regex', 'require', '资源标题不能为空'),
         array('name', 'regex', 'require', '资源名称不能为空'),
-        array('cat_id', 'regex', 'require', '类目不能为空'),
+        // array('cat_id', 'regex', 'require', '类目不能为空'),
         array('image', 'regex', 'require', '缩略图不能为空'),
         array('file_url', 'regex', 'require', '资源包不能为空'),
     ),

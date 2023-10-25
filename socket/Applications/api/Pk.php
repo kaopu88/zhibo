@@ -974,7 +974,8 @@ class Pk extends Common
 
         $secret = md5($secret_key . $stream . $ext);
         
-        return sprintf('rtmp://%s/live/%s', 'wsla.eusmile.cn', $stream);
+        return sprintf('rtmp://%s/live/%s', 'lala.dangjunwei.top', $stream);
+        // return sprintf('rtmp://%s/live/%s', 'wsla.eusmile.cn', $stream);
         return sprintf('rtmp://%s/live/%s?bizid=%s&txSecret=%s&txTime=%s', $pull, $stream, $stream_prefix, $secret, $ext);
         //return sprintf('rtmp://%s/live/%s', $pull, $stream);
     }

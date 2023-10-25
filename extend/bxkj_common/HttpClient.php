@@ -154,6 +154,7 @@ class HttpClient
         $this->caFile = isset($this->caFile) ? $this->caFile : $this->config['caFile'];
         $url = $this->generateUrl($url, $type, $data);
         $this->reqUrl = $url;
+        // var_dump($url);die;
         //初始化
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
@@ -232,6 +233,7 @@ class HttpClient
         $retries += 1;
         do {
             $output = curl_exec($curl);
+            // var_dump($output);die;
             $curlInfo = curl_getinfo($curl);
             $retries--;
         } while ($retries > 0 && (curl_errno($curl) || $curlInfo['http_code'] != '200'));

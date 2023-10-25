@@ -2264,7 +2264,7 @@ function systemSend($uid, $content = '', $picture = '', $video = '', $voice = ''
             if($imgstemp['format']=='gif'||$imgstemp['format']=='GIF'){
                 $imgstemp['badge'] = 'gif';
             }
-            if($imgstemp['height']/$imgstemp['width']>3){
+            if($imgstemp['width']>0 && $imgstemp['height']/$imgstemp['width']>3){
                 $imgstemp['badge'] = 'long';
             }
             $imgstemp['smallpicture'] = $val.'?imageView2/1/w/300/h/300';

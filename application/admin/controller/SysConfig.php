@@ -274,7 +274,20 @@ class SysConfig extends Controller
                     $data['beauty_setting']['beauty_ios_key'] = $settingData['beauty_setting']['beauty_ios_key'];
                     $data['beauty_setting']['beauty_android_key'] = $settingData['beauty_setting']['beauty_android_key'];
                 }
+                if ($data['beauty_setting']['beauty_status'] == 3) {
+                    $data['beauty_setting']['beauty_ios_key'] = $settingData['beauty_setting']['beauty_ios_key'];
+                    $data['beauty_setting']['beauty_android_key'] = $settingData['beauty_setting']['beauty_android_key'];
+                    $data['beauty_setting']['tuohuan_beauty_ios_key'] = !empty($data['beauty_setting']['tuohuan_beauty_ios_key']) ? $data['beauty_setting']['tuohuan_beauty_ios_key'] : $settingData['beauty_setting']['tuohuan_beauty_ios_key'];
+                    $data['beauty_setting']['tuohuan_beauty_android_key'] = !empty($data['beauty_setting']['tuohuan_beauty_android_key']) ? $data['beauty_setting']['tuohuan_beauty_android_key'] : $settingData['beauty_setting']['tuohuan_beauty_android_key'];
+                    
+                    $data['beauty_setting']['meihu_beauty_ios_key'] = $settingData['beauty_setting']['meihu_beauty_ios_key'];
+                    $data['beauty_setting']['meihu_beauty_ios_appid'] = $settingData['beauty_setting']['meihu_beauty_ios_appid'];
+                    $data['beauty_setting']['meihu_beauty_android_key'] = $settingData['beauty_setting']['meihu_beauty_android_key'];
+                    $data['beauty_setting']['meihu_beauty_android_appid'] = $settingData['beauty_setting']['meihu_beauty_android_appid'];
+                }
+                var_dump($data);
                 $post = json_encode($data);
+                var_dump($post);die;
                 $result = Db::name('sys_config')->where(['mark' => 'beauty'])->update(['value' => $post]);
             }
 

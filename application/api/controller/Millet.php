@@ -233,24 +233,24 @@ class Millet extends UserController
 
         $real_name = Db::name('user_verified')->where([['user_id', 'eq', USERID], ['status', 'eq', 1]])->value('name');
 
-        if (empty($real_name)) return $this->jsonError('请先完成实名认证~', 1006);
+        // if (empty($real_name)) return $this->jsonError('请先完成实名认证~', 1006);
 
         $phone = DsSession::get('user.phone');
 
-        if (empty($phone)) return $this->jsonError('请先绑定手机号~', 1004);
+        // if (empty($phone)) return $this->jsonError('请先绑定手机号~', 1004);
 
         $core = new CoreSdk();
 
-        //验证验证码
-        $res = $core->post('common/check_sms_code', array(
-            'phone' => $phone,
-            'phone_code' => DsSession::get('user.phone_code'),
-            'scene' => 'auth_cash',
-            'code' => $params['code'],
-            'client_seri' => ClientInfo::encode()
-        ));
+        // //验证验证码
+        // $res = $core->post('common/check_sms_code', array(
+        //     'phone' => $phone,
+        //     'phone_code' => DsSession::get('user.phone_code'),
+        //     'scene' => 'auth_cash',
+        //     'code' => $params['code'],
+        //     'client_seri' => ClientInfo::encode()
+        // ));
 
-        if (!$res) return $this->jsonError($core->getError());
+        // if (!$res) return $this->jsonError($core->getError());
 
         //生成微信提现帐户
         $cash_insert = [
@@ -342,7 +342,7 @@ class Millet extends UserController
         //虚似用户不可提现
         if ($user_info['isvirtual'] && RUNTIME_ENVIROMENT == 'pro') return $this->jsonError('暂无提现权限~，请联系客服');
         //未绑定手机号引民至绑定手机号
-        if (empty($user_info['phone'])) return $this->jsonError('请先绑定手机号~', 1004);
+        // if (empty($user_info['phone'])) return $this->jsonError('请先绑定手机号~', 1004);
 
         if ($user_info['is_anchor'] == '0') $change_ratio = config('app.cash_setting.cash_user_rate');
         $anchor = Db::name('anchor')->where(['user_id' => USERID])->find();
@@ -426,7 +426,7 @@ class Millet extends UserController
         } else{
             $real_name = Db::name('user_verified')->where([['user_id', 'eq', USERID], ['status', 'eq', 1]])->value('name');
 
-            if (empty($real_name)) return $this->jsonError('请先完成实名认证~', 1006);
+            // if (empty($real_name)) return $this->jsonError('请先完成实名认证~', 1006);
             //检查帐户登录方式
             if ($user_info['reg_way'] == 'third_weixin')
             {

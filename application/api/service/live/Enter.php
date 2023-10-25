@@ -241,10 +241,8 @@ class Enter extends LiveBase2
     {
         if ($this->redis->zscore('blacklist:' . $room_id, USERID)) return make_error('请求错误,无法进入直播间');//黑名单
         if ($this->redis->sismember(self::$livePrefix . $room_id . self::$kickingKey, USERID) == 1) return make_error('您已被踢出直播间,无法再进入');
-
         //return make_error('您的等级不够，不能进入');
         $room = $this->getRoomOne($room_id);
-
         if (empty($room)) return make_error('直播已结束');
         if (USERID == $room['user_id']) return make_error('您不可以进入自已的直播间');
 

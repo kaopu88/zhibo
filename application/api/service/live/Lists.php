@@ -30,7 +30,7 @@ class Lists extends LiveBase2
     //离线条件
     protected $off_line_where = [['status', 'eq', '1']];
 
-    protected $order = 'room_model asc';
+    protected $order = 'sort desc,room_model asc';
 
     protected $custom_order = [];//自定义order
 
@@ -288,7 +288,6 @@ class Lists extends LiveBase2
             ->where($this->on_line_where);
 
         !empty($this->order) && $live->order($this->order);
-
         if (!empty($this->custom_order)) {
 
             $whereuid = implode(',', $this->custom_order);
@@ -298,8 +297,8 @@ class Lists extends LiveBase2
             $live->order($exp);
         }
 
-        $res = $live->select();
-
+        $res = $live->fetchSql(0)->select();
+        // var_dump($res);die;
         return $res;
     }
     
@@ -338,6 +337,15 @@ class Lists extends LiveBase2
         $res = Db::name('user')
             ->where($this->off_line_where)
             ->field('user_id, nickname, avatar')
+            ->fetchSql(0)
+            ->select();
+        // var_dump($res);die;    
+        return $res;
+        $res = Db::name('user')->alias('u')
+            ->join('live l','l.user_id=u.user_id')
+            ->where('u.status',1)
+            ->field('u.user_id, u.nickname, u.avatar')
+            ->order('l.sort desc')
             ->select();
         return $res;
     }
@@ -444,7 +452,7 @@ class Lists extends LiveBase2
         $channel_live = Db::name('live')
             ->where(['status' => 1, 'hot_status' => 1])
             ->field('id room_id, user_id, nickname,pull,stream, avatar, title, cover_url, province, city, create_time, type, room_model,lng,lat,sort')
-            ->order('type','asc')
+            ->order('sort desc,type asc')
             ->select();
         $this->offset = $offset;
         if (!empty($channel_live)) {

@@ -23,6 +23,11 @@ class Payments extends Controller
     {   
         $this->checkAuth('admin:payments:add');
         if (Request::isGet()){
+            $list = Db::name('recharge_bean')->where([
+                    ['apple_id', 'eq', ''],
+                    ['status', 'eq', '1']
+                ])->order('sort desc,create_time desc')->select();
+            $this->assign('rechargeList', $list);
             return $this->fetch();
         }else{
             $vipService = new \app\admin\service\Payments();
@@ -42,7 +47,7 @@ class Payments extends Controller
             $id = input('id');
             $info = Db::name('payments')->where('id', $id)->find();
             if (empty($info)) $this->error('套餐不存在');
-         $list = Db::name('recharge_bean')->where([
+            $list = Db::name('recharge_bean')->where([
                     ['apple_id', 'eq', ''],
                     ['status', 'eq', '1']
                 ])->order('sort desc,create_time desc')->select();

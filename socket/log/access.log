@@ -11357,3 +11357,172 @@ Warning: Error while sending STMT_PREPARE packet. PID=14676 in /www/wwwroot/zhib
 Warning: Error while sending STMT_PREPARE packet. PID=14675 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
 
 Warning: Error while sending STMT_PREPARE packet. PID=14676 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14678 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14677 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14679 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14681 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14680 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14675 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14676 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14678 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14677 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14675 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14675 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14679 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=14678 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3936 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3940 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=6020 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+string(145) "cURL error 6: Could not resolve: zb.dangjunwei.top (Timeout while contacting DNS servers) (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)"
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=6020 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3940 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=6020 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3940 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3940 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=6020 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3940 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=6020 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=6020 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3940 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3940 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=6020 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3937 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: PDO::prepare(): MySQL server has gone away in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3939 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3935 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3941 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739
+
+Warning: Error while sending STMT_PREPARE packet. PID=3938 in /www/wwwroot/zhibb/socket/vendor/workerman/mysql/src/Connection.php on line 1739

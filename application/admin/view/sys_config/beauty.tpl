@@ -18,6 +18,7 @@
                                     <td class="field_name">美颜类型</td>
                                     <td>
                                         <select class="base_select" name="beauty_setting[beauty_status]" selectedval="{$_info.beauty_setting.beauty_status ? $_info.beauty_setting.beauty_status  : '0'}">
+                                            <option value="3">美狐美颜至尊版</option>
                                             <option value="2">秉信至尊版</option>
                                             <option value="1">秉信基础版</option>
                                             <option value="0">关闭</option>
@@ -38,7 +39,6 @@
                                         <input class="base_text" name="beauty_setting[beauty_android_key]" value=""/>
                                     </td>
                                 </tr>
-
                                 <tr class="tuohuankey"  style="display: none">
                                     <td class="field_name">IOS KEY</td>
                                     <td>
@@ -50,6 +50,31 @@
                                     <td class="field_name">Android KEY</td>
                                     <td>
                                         <input class="base_text" name="beauty_setting[tuohuan_beauty_android_key]" value=""/>
+                                    </td>
+                                </tr>
+                                
+                                <tr class="meihu"  style="display: none">
+                                    <td class="field_name">IOS KEY</td>
+                                    <td>
+                                        <input class="base_text" name="beauty_setting[meihu_beauty_ios_key]" value=""/>
+                                    </td>
+                                </tr>
+                                <tr class="meihu"  style="display: none">
+                                    <td class="field_name">IOS APPID</td>
+                                    <td>
+                                        <input class="base_text" name="beauty_setting[meihu_beauty_ios_appid]" value=""/>
+                                    </td>
+                                </tr>
+                                <tr class="meihu" style="display: none" >
+                                    <td class="field_name">Android KEY</td>
+                                    <td>
+                                        <input class="base_text" name="beauty_setting[meihu_beauty_android_key]" value=""/>
+                                    </td>
+                                </tr>
+                                <tr class="meihu" style="display: none" >
+                                    <td class="field_name">Android APPID</td>
+                                    <td>
+                                        <input class="base_text" name="beauty_setting[meihu_beauty_android_appid]" value=""/>
                                     </td>
                                 </tr>
                             </table>
@@ -77,16 +102,23 @@
             if (type == 0) {
                 $('.xiangxinkey').hide();
                 $('.tuohuankey').hide();
+                $('.meihu').hide();
             }
             if (type == 1) {
                 $('.xiangxinkey').hide();
                 $('.tuohuankey').show();
+                $('.meihu').hide();
             }
             if (type == 2) {
                 $('.xiangxinkey').show();
                 $('.tuohuankey').hide();
+                $('.meihu').hide();
             }
-
+            if (type == 3) {
+                $('.xiangxinkey').hide();
+                $('.tuohuankey').hide();
+                $('.meihu').show();
+            }
             $('#modify').hide();
             $('#modify_submit').show();
         });
@@ -95,14 +127,22 @@
             if (type == 0) {
                 $('.xiangxinkey').hide();
                 $('.tuohuankey').hide();
+                $('.meihu').hide();
             }
             if (type == 1) {
                 $('.xiangxinkey').hide();
                 $('.tuohuankey').show();
+                $('.meihu').hide();
             }
             if (type == 2) {
                 $('.xiangxinkey').show();
                 $('.tuohuankey').hide();
+                $('.meihu').hide();
+            }
+            if (type == 3) {
+                $('.xiangxinkey').hide();
+                $('.tuohuankey').hide();
+                $('.meihu').show();
             }
             $(this).hide();
             $('#modify_submit').show();

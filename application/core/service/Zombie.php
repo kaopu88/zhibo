@@ -367,7 +367,6 @@ class Zombie
 
         //重置上限
         if ($number > (300-$currentCount)) $number = 300-$currentCount;
-       
         $coreSdk = new CoreSdk();
 
         for($i = 1; $i <= $number; $i++)

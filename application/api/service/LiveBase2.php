@@ -93,7 +93,7 @@ class LiveBase2 extends Service
         'type_val' => '0',
         'room_channel' => '0',
         'room_model' => 0,
-        'status' => 0,
+        'status' => 1,
         'lng' => 0,
         'lat' => 0,
         'voice_number' => 0,
@@ -196,7 +196,6 @@ class LiveBase2 extends Service
     public function getRoomOne($room_id)
     {
         $this->where['id'] = $room_id;
-
         $room = Db::name('live')->field('*, id room_id')->where($this->where)->find();
 
         return $room;

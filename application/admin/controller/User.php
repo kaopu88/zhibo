@@ -373,12 +373,12 @@ class User extends Controller
             );
             if ($mode == 'normal') {
                 if (empty($phone)) $this->error('手机号不能为空');
-                if (empty($code)) $this->error('验证码不能为空');
+                // if (empty($code)) $this->error('验证码不能为空');
                 $data['phone'] = $phone;
                 $data['code'] = $code;
             } else {
                 if (!empty($phone)) {
-                    if (empty($code)) $this->error('验证码不能为空');
+                    // if (empty($code)) $this->error('验证码不能为空');
                     $data['phone'] = $phone;
                     $data['code'] = $code ? $code : '';
                 } else {

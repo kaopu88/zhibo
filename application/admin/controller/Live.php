@@ -43,7 +43,8 @@ class Live extends Controller
         $this->checkAuth('admin:live:select');
         $params = $request->param();
         $CoreSdk = new CoreSdk();
-        $rs = $CoreSdk->post('Zombie/addRobot', ['room_id' => $params['room_id'], 'count' => $params['num']]);
+        $rs = $CoreSdk->post('zombie/addRobot', ['room_id' => $params['room_id'], 'count' => $params['num']]);
+        // var_dump($rs);die;
         if ($rs === false) return $this->error($CoreSdk->getError());
         alog("live.live.add_robot", "直播间 room_id：".$params['room_id']." 增加 ".$params['num']." 个机器人");
         $this->success('添加成功');

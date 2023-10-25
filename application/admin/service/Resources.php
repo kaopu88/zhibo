@@ -75,10 +75,10 @@ class Resources extends Service
         if ($data === false) return $this->setError($this->df->getError());
         $id = Db::name('resources')->insertGetId($data);
         if (!$id) return $this->setError('新增失败');
-        if (!empty($data['file_url'])) {
-            $res = $this->updateFileInfo($id, $data['file_url']);
-            if (!$res) return false;
-        }
+        // if (!empty($data['file_url'])) {
+        //     $res = $this->updateFileInfo($id, $data['file_url']);
+        //     if (!$res) return false;
+        // }
         Service::commit();
         return $id;
     }
